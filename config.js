@@ -56,7 +56,7 @@ module.exports = {
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
     INBOX_BLOCK: process.env.INBOX_BLOCK === undefined ?'false' : process.env.INBOX_BLOCK,
     ANTI_BAD: process.env.ANTI_BAD === undefined ?'true' : process.env.ANTIBAD,
-    FULLALEXA: process.env.FULL_ALEXA === undefined ?'false' : process.env.FULL_ALEXA,
+    FULL_ALEXA: process.env.FULL_ALEXA === undefined ?'false' : process.env.FULL_ALEXA,
     WHATS_LINK_BLOCK: process.env.WHATS_LINK_BLOCK === undefined ?'false' : process.env.WHATS_LINK_BLOCK,
     MENU_LOGO: process.env.MENU_LOGO === undefined ?'https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg' : process.env.MENU_LOGO,
     PKGPS: process.env.PKGPS === undefined ?'=xnxcom' : process.env.PKGPS,
