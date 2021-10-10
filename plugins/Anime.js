@@ -102,7 +102,7 @@ let tk = Config.WORKTYPE == 'public' ? false: true
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.BOT_NAME})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.CAPTIONS})
 
     }));
 
@@ -194,6 +194,6 @@ let tk = Config.WORKTYPE == 'public' ? false: true
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.BOT_NAME})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.CAPTIONS})
 
     }));
