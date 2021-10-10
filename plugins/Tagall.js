@@ -7,11 +7,12 @@ NEOTROX - TEENUHX
 const Neotro = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
+let tn = Config.WORKTYPE == 'public' ? false : true
 const Language = require('../language');
 const Lang = Language.getString('tagall');
 const SLang = Language.getString('scrapers');
 
-Neotro.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Neotro.addCommand({pattern: 'tagall ?(.*)', fromMe: tn, desc: Lang.TAGALL_DESC }, (async (message, match) => {
    
     if (!message.reply_message) {
         if (match[1] !== '') {
