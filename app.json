@@ -1,0 +1,194 @@
+{
+    "name": "Amazon",
+    "description": "❤️Amazone Alexa Is a Powerfull bot for Whatsapp Powered By ©️TEENU-X",
+    "logo": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg",
+    "keywords": ["whatsapp", "userbot", "java", "button bot", "whatsapp", "api", "ai", "alexa", "bug", "free rdp" ],
+    "repository": "https://www.github.com/xneon2/Hashzi-X",
+    "website":   "https://t.me/Amazone_Neotrox_Support",
+    "success_url": "https://t.me/Amazone_Neotrox_Support",
+    "stack": "container",
+    "env": {
+        "NEUTRO_SESSION": {
+            "description": "Type here yours Neotro Session. - QR scan කළ පසු ලැබෙන කේතය.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 9478xxxxxxxxx (Sri lanka number +94)",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot language. English => en,  සිංහල භාශාව සදහා => si",
+            "required": true,
+            "value": "si"
+        },
+        "BIO": {
+            "description": "Change Your live Bio | ඔබේ About එකට අවශ්‍ය දෙයක් මෙහි ලියන්න",
+            "required": false,
+            "value": "ɪ ᴀᵐ ⁿᵒᵗ ᵖᵉʳᶠᵉᶜᵗ ʙᵘᵗ ɪ  ᴀᵐ ʟⁱᵐⁱᵗᵉᵈ ᴇᵈⁱᵗⁱᵒⁿ👀🔥"
+        },
+        "AUTO_STICKER": {
+            "description": "If you likes Auto Sticker you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "false"
+         },
+        "SONGD": {
+            "description": "Customizable Song Download message",
+            "required": false,
+            "value": "*◦•●◉Downloading Your Song◉●•◦*"
+        },
+        "SONGU": {
+            "description": "Customizable Song upload message",
+            "required": false,
+            "value": "*◦•●◉✿Uploading Your Song✿◉●•◦*"
+        },
+        "AUTO_BIO": {
+            "description": "Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": " For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+       "BOT_NAME": {
+            "description": "give a name you disire to give your bot (for auto reply white to identify)",
+            "required": false,
+            "value": "👩‍🦰©Amazone Alexa"
+        },
+        "WHATS_LINK_BLOCK": {
+            "description": "Link Blocking System.- this one blocks whatsapp group  link",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Customizable Mute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+       },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 947xxxx && 947xxxx-1xxx or 947xxxx,947xxx...(sri lanka)",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Customizable Unmute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "Bot Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "required": true,
+            "value": "private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.",
+            "required": true
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "get api key. https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable Ban Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable Kickme Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+            
+         },
+        "DEMOTE_MESSAGE": {
+            "description": "Demote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "INBOX_BLOCK": {
+            "description": "Activate Inbox Block System true or false",
+            "required": false,
+            "value": "false"
+        },
+        "WELCOME_GIF": {
+            "description": "Welcome Gif",
+            "required": false,
+            "value": "https://telegra.ph/file/d969f3365028c88c7719f.mp4"
+        }, 
+        "BYE_GIF": {
+            "description": "Bye gif",
+            "required": false,
+            "value": "https://telegra.ph/file/d969f3365028c88c7719f.mp4"
+        },
+        "ALIVE_LOGO": {
+            "description": "Alive message Photo.",
+            "required": false,
+            "value": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg"
+       },
+        "ADULT_MODE": {
+            "description": "YOU CAN USE on or off",
+            "required": false,
+            "value": "off"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"          
+       },
+        "BOT_PRESENCE": {
+            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+            "required": false,
+            "value": "offline"
+        },
+        "COFFEEHOUSE_API_KEY": {
+            "description": "Pass This Step!",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
