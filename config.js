@@ -14,10 +14,10 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './Amazone.db' : process
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 module.exports = {
     VERSION: 'v8.1.0 Global Stable',
-    CHANNEL: 'https://t.me/remasterplugin',
+    CHANNEL: 'https://t.me/neotro_plugins',
     SESSION: process.env.NEUTRO_SESSION === undefined ? '' : process.env.NEUTRO_SESSION,
-    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
-    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
+    AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
