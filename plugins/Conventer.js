@@ -107,7 +107,7 @@ function webp2mp4File(path) {
 
 
 
-    Neotro.addCommand({pattern: 'mp3$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
+    Neotro.addCommand({pattern: 'mp3$', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -127,7 +127,7 @@ function webp2mp4File(path) {
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Neotro.addCommand({pattern: 'photo$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
+    Neotro.addCommand({pattern: 'photo$', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
