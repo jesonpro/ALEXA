@@ -106,7 +106,7 @@ let tk = Config.WORKTYPE == 'public' ? false: true
 
     }));
 
-    Neotro.addCommand({pattern: 'anime', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    Neotro.addCommand({pattern: 'anime', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
