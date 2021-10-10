@@ -46,7 +46,7 @@ let tn = Config.WORKTYPE == 'public' ? false: true
 
 
 
-    amazone.addCommand({ pattern: 'audio ?(.*)', fromMe: true, dontAdCommandList: true,  deleteCommand: false}, async (message, match) => {
+    amazone.addCommand({ pattern: 'audio ?(.*)', fromMe: true, dontAddCommandList: true,  deleteCommand: false}, async (message, match) => {
 
         const link = match[1]
     
