@@ -1279,7 +1279,7 @@ const Lang = Language.getString('wallpaper');
 
     }));
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true}, (async (message, match) => {
+    Neotro.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true}, (async (message, match) => {
 
         var r_text = new Array ();
 
