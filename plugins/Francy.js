@@ -32,7 +32,7 @@ await axios
 })
  
 	
-	Neotro.addCommand({ pattern: 'ftext ?(.*)', dontAdCommandList: true, fromMe: true }, async (message, match) => {
+	Neotro.addCommand({ pattern: 'ftext ?(.*)', dontAddCommandList: true, fromMe: true }, async (message, match) => {
 
 const word = match[1]
 if (!word) return await message.sendMessage(" *Please Input Word* ")
