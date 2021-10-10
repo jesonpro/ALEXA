@@ -1,16 +1,13 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const {MessageType, Presence, MessageOptions} = require('@adiwajshing/baileys');
 const Base = require('./Base');
 const Message = require('./Message');
 const ReplyMessage = require('./ReplyMessage');
-
 class Image extends Base {
     constructor(client, data) {
         super(client);
