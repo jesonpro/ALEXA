@@ -1,7 +1,7 @@
 /* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-NEOTROX - TEENUHX©️TEENU-X
+NEOTROX - TEENUHX
 */
 
 const fs = require("fs");
@@ -229,7 +229,7 @@ setInterval(async () => {
 
 // ===================AUTO-BIO===================
 
-    var insult = await axios.get('https://gist.githubusercontent.com/jesonpro/fcc16ae09d8e5390b223628b0f091c34/raw')
+    var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/f16bbd4ceeb4324d4a727b431a4ef1f2/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
     var StrSes_Db = await AmazoneDB.findAll({
@@ -237,7 +237,6 @@ setInterval(async () => {
           info: 'StringSession'
         }
     });
-     
     
 // =====================SESSION =================
 
@@ -398,7 +397,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🧚‍♂QUEEN AMAZONE Working As private!👩‍🦰*\n\nPlease do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.basichelp* _to get your full Help list and Basic Commands._\n\n_Your bot in private  Mode. To change, use_ ```.setvar WORK_TYPE:public``` _command._\n\n*Thanks for using 🧚‍♂QUEEN AMAZONE💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🧚‍♂QUEEN AMAZONE Working As private!👩‍🦰\n\nPlease do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.basichelp* _to get your full Help list and Basic Commands._\n\n_Your bot in private  Mode. To change, use_ ```.setvar WORK_TYPE:public``` _command._\n\n*Thanks for using 🧚‍♂QUEEN AMAZONE💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -541,7 +540,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
         if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
     }
 
-// ====================BLOCK-CHAT==================©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
+// ====================BLOCK-CHAT==================
     
         events.commands.map(
             async (command) =>  {
@@ -601,11 +600,11 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         } else {
                             whats = new Message(conn, msg);
                         }
-//=====
+/*
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-//=====
+*/
                         try {
                             await command.function(whats, match);
                         } catch (error) {
