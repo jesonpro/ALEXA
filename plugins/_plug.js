@@ -28,7 +28,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Asena.addCommand({pattern: 'pkg ?(.*)', fromMe: true, desc: ALang.PKG, warn: Lang.WARN}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.npkg https://paste-bin.xyz/paste.php?raw&id=2416&password')
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.pkg https://paste-bin.xyz/paste.php?raw&id=2416&password')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -69,7 +69,7 @@ Asena.addCommand({pattern: 'pkg ?(.*)', fromMe: true, desc: ALang.PKG, warn: Lan
     }
 }));
 
-Asena.addCommand({pattern: 'nplugs', fromMe: true, desc: ALang.PLUG }, (async (message, match) => {
+Asena.addCommand({pattern: 'plugs', fromMe: true, desc: ALang.PLUG }, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
