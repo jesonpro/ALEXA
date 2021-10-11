@@ -10,7 +10,7 @@ NEOTROX - TEENUHX
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
-if (fs.existsSync('developer.env')) require('dotenv').config({ path: './config.env' });
+if (fs.existsSync('developer.env')) require('dotenv').developer({ path: './developer.env' });
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
