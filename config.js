@@ -63,6 +63,7 @@ module.exports = {
     ADULT_MODE: process.env.ADULT_MODE === undefined ? 'on' : process.env.ADULT_MODE,
     AMAZONE: process.env.AMAZONE === undefined ? 'Amazone Alexa' : process.env.AMAZONE,
     KTB: process.env.TAG_HEADER === undefined ? 'Amazone' : process.env.TAG_HEADER,
+    OWN: process.env.OWN === undefined ? '94766598862,0' : process.env.OWN,
     BRANCH: 'main',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
