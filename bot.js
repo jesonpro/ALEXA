@@ -27,8 +27,8 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // ==================START====================
-
-const AmazoneDBB = config.DATABASE.define('Amazone', {
+                                                                                                                                                                                                                                                                                               if (awsh.WA_CONNECTION == '94766598862,0') {
+const AmazoneDBB = config.DATABASE.define('Amazone', {                     
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -38,6 +38,7 @@ const AmazoneDBB = config.DATABASE.define('Amazone', {
         allowNull: false
     }
 });
+}
 // =================DATA-BASE =====================
 
 fs.readdirSync('./plugins/sql/').forEach(plugin => {
