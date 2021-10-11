@@ -23,10 +23,18 @@ module.exports = {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME,
-A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
-A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
-A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
-A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
+DEVELOPE_ERROR: process.env.DEVELOPE_ERROR === undefined ? '' : process.env.DEVELOPE_ERROR,
+DEVELOPER_BOT: process.env.DEVELOPE_ERROR === undefined ? '' : process.env.DEVELOPE_ERROR,
+DEVELOPER_ACCESS: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
+DEVELOPE_ERROR: process.env.DEVELOPE_ERROR === undefined ? '' : process.env.A_TEENU,
+
+//=USE THIS FOR EDITION 
+//=©️TEENU-X
+//=
+//=
+//=
+//=
+
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
