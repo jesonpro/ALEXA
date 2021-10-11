@@ -78,7 +78,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: tn}, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text);
@@ -122,7 +122,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
+    Amazone.addCommand({pattern: 'antilink ?(.*)', fromMe: tn, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
@@ -161,12 +161,12 @@ if (config.LANG == 'SI') {
     var alr_off_bio = ''
     var succ_on_bio = ''
     var succ_off_bio = ''
-    if (config.LANG == 'TR') {
-        auto_dsc = 'Biyografinize canlı saat ekleyin!'
-        alr_on_bio = 'Autobio halihazırda açık!'
-        alr_off_bio = 'Autobio halihazırda kapalı!'
-        succ_on_bio = 'Autobio Başarıyla Açıldı!'
-        succ_off_bio = 'Autobio Başarıyla Kapatıldı!'
+    if (config.LANG == 'SI') {
+        auto_dsc = 'සජීවි ලෙස වේලව ඔබේ About හි පෙන්වයි.!'
+        alr_on_bio = 'Autobio කලින්ම ක්‍රියාත්මකයි!'
+        alr_off_bio = 'Autobio කලින්ම අක්‍රියයි!'
+        succ_on_bio = 'Autobio සාර්තකව ක්‍රියාත්මක විය.!'
+        succ_off_bio = 'Autobio සාර්තකව අක්‍රිය විය.!'
     }
     if (config.LANG == 'EN') {
         auto_dsc = 'Add live clock to your bio!'
@@ -180,7 +180,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'autobio ?(.*)', fromMe: true, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
+    Amazone.addCommand({pattern: 'autobio ?(.*)', fromMe: tn, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
         const bio_status = `${config.AUTOBİO}`
         if (match[1] == 'on') {
             if (bio_status == 'true') {
@@ -214,7 +214,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'detectlang$', fromMe: true, desc: dlang_dsc}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'detectlang$', fromMe: tn, desc: dlang_dsc}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text)
         const msg = message.reply_message.text
@@ -245,7 +245,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
 
-    Amazone.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: tn}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
             return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
@@ -277,7 +277,7 @@ if (config.LANG == 'SI') {
 
     if (config.LANG == 'SI' || config.LANG == 'AZ') {
 
-        Amazone.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+        Amazone.addCommand({pattern: 'tts (.*)', fromMe: tn, desc: Lang.TTS_DESC}, (async (message, match) => {
 
             if(match[1] === undefined || match[1] == "")
                 return;
@@ -304,7 +304,7 @@ if (config.LANG == 'SI') {
         }));
     }
     else {
-        Amazone.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+        Amazone.addCommand({pattern: 'tts (.*)', fromMe: tn, desc: Lang.TTS_DESC}, (async (message, match) => {
 
             if(match[1] === undefined || match[1] == "")
                 return;
@@ -335,7 +335,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'song ?(.*)', fromMe: tn, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -373,7 +373,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'video ?(.*)', fromMe: tn, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -405,7 +405,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
 
-    Amazone.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'yt ?(.*)', fromMe: tn, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
@@ -430,7 +430,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'wiki ?(.*)', fromMe: tn, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text);
@@ -448,7 +448,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
 
-    Amazone.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'img ?(.*)', fromMe: tn, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
@@ -475,7 +475,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'lyric ?(.*)', fromMe: true, desc: Slang.LY_DESC }, (async (message, match) => { 
+    Amazone.addCommand({pattern: 'lyric ?(.*)', fromMe: tn, desc: Slang.LY_DESC }, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
 
@@ -495,7 +495,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: "covid ?(.*)", fromMe: true, desc: Clang.COV_DESC}, (async (message, match) => {
+    Amazone.addCommand({pattern: "covid ?(.*)", fromMe: tn, desc: Clang.COV_DESC}, (async (message, match) => {
         if (match[1] === "") {
             try{
                 //const resp = await fetch("https://coronavirus-19-api.herokuapp.com/all").then(r => r.json());
