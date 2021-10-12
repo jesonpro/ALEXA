@@ -596,14 +596,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                     if ((awsh.WA_CONNECTION !== false && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && awsh.WA_CONNECTION.includes(',') ? awsh.WA_CONNECTION.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == awsh.WA_CONNECTION || awsh.WA_CONNECTION.includes(',') ? awsh.WA_CONNECTION.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == awsh.WA_CONNECTION)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
-                        if (command.onlyPinned && chat.pin === undefined) return;
-                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
-                    }
-
+                     
 //=====================================================================================
 //=====================================================================================
                             
