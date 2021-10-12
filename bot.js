@@ -627,7 +627,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-/=
+//=
 
 
 //=====================================================================================
