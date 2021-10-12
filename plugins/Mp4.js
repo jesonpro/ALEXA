@@ -17,7 +17,7 @@ const DWLOAD_VID = "*🎭Downloading Your Video...*"
 const YTV_UP = "*🚀Uploading Your Video...*"
 const NO_RESULT = "*🌀can't Find Anything...*"
 
-    amazone.addCommand({ pattern: 'video ?(.*)', fromMe: true, desc: Lang.MP4,  deleteCommand: false}, async (message, match) => {
+    amazone.addCommand({ pattern: 'video ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.MP4,  deleteCommand: false}, async (message, match) => {
 
         const link = match[1]
     
