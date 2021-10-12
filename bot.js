@@ -338,7 +338,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```🛡️යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```🛡️යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + TEENU + '```', MessageType.text
                     ); 
                 }
             }
@@ -365,7 +365,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
         
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```🛡️Type``` *.update now* ```for update.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```🛡️Type``` *.update now* ```for update.```\n\n' + TEENU + '```', MessageType.text
                     ); 
                 }
             }
@@ -393,7 +393,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + TEENU + '```', MessageType.text
                     ); 
                 }
             }
@@ -419,7 +419,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Type``` *.update now* ````for update.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```Type``` *.update now* ````for update.```\n\n' + TEENU + '```', MessageType.text
                     ); 
                 }
             }
