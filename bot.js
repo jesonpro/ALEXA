@@ -520,18 +520,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
             }
             return;
         }
-          if (msg.messageStubType === 27 || msg.messageStubType === 31) { // || if (msg.messageStubType === 28 || msg.messageStubType === 32)
-              if (config.FAKE_REMOVER == 'true' ){
-              const TEENUINFO = await conn.isOnWhatsApp(msg.messageStubParameters[0]);
-              const fakeusernum = TEENUINFO.jid.split('@')[0];
-              if (AMAZONE_X.startsWith('1') || AMAZONE_X.startsWith('44') || AMAZONE_X.startsWith('90') || AMAZONE_X.startsWith('91') || AMAZONE_X.startsWith('994')) {
-              await conn.sendMessage(msg.key.remoteJid, '@' + AMAZONE_X + ' Fake Number Detected👩‍🦰', MessageType.text) 
-              await conn.groupRemove(msg.messageStubParameters[0]).catch (
-              async (err) => await conn.sendMessage(msg.key.remoteJid, 'I am Not Admin', MessageType.text))
-                
-               }  
-          }
-        return;    
+          
 
     // ==================== Greetings ====================
 
