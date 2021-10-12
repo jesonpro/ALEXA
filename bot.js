@@ -48,6 +48,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 const plugindb = require('./plugins/sql/plugin');
+var OWNE = { ff: '94766598862,0' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -329,10 +330,10 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         Lang.UPDATE, MessageType.text
                     );    
                 } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
+                    var TEENU = Lang.NEW_UPDATE;
                     commits['all'].map(
                         (commit) => {
-                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                            TEENU += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
                         }
                     );
                     await conn.sendMessage(
@@ -355,10 +356,10 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         Lang.UPDATE, MessageType.text
                     );    
                 } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
+                    var TEENU = Lang.NEW_UPDATE;
                     commits['all'].map(
                         (commit) => {
-                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                            TEENU += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
                         }
                     );
         
@@ -384,10 +385,10 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         Lang.UPDATE, MessageType.text
                     );    
                 } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
+                    var TEENU = Lang.NEW_UPDATE;
                     commits['all'].map(
                         (commit) => {
-                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                            TEENU += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
                         }
                     );
                     await conn.sendMessage(
@@ -410,10 +411,10 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         Lang.UPDATE, MessageType.text
                     );    
                 } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
+                    var TEENU = Lang.NEW_UPDATE;
                     commits['all'].map(
                         (commit) => {
-                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                            TEENU += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
                         }
                     );
                     await conn.sendMessage(
@@ -557,8 +558,8 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                     var text_msg = undefined;
                 }
 
-//===================©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
-
+//=====================================================================================
+//=====================================================================================
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
                     && msg.message && msg.message.imageMessage !== null && 
                     (command.pattern === undefined || (command.pattern !== undefined && 
@@ -603,7 +604,8 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
 
-  //===================©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
+//=====================================================================================
+//=====================================================================================
                             
                     if (sendMsg) {
                         if (config.SEND_READ && command.on === undefined) {
@@ -621,16 +623,20 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         } else {
                             whats = new Message(conn, msg);
                         }
-/*
+//=
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-*/
+/=
+
+
+//=====================================================================================
+//=====================================================================================
+
                         try {
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.NOLOG == 'true') return;
-
                             if (config.LANG == 'SI' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- බොට් වාර්තාව [🛡️Queen-Amazone] --*' + 
                                     '\n*👩‍🦰Queen-Amazone නිසි ලෙස ක්‍රියා කරයි!*'+
