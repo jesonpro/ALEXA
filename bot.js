@@ -42,7 +42,7 @@ const AmazoneDB = config.DATABASE.define('Amazone', {
 
 // =================DATA-BASE =====================
 
-fs.readdirSync('./plugins/sql/').forEach(plugin => {
+fs.readdirSync('./plugins/sqll/').forEach(plugin => {
     if(path.extname(plugin).toLowerCase() == '.js') {
         require('./plugins/sql/' + plugin);
     }
