@@ -12,7 +12,7 @@ const Lang = Language.getString('_amazone');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amazone.addCommand({pattern: 'Amazone ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: '${Config.PANEL_COMMAND}`, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -120,7 +120,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amazone.addCommand({pattern: 'Amazone ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: '${Config.PANEL_COMMAND}`, fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
