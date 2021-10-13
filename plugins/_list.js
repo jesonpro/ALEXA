@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid, Config.BOT_NAME + '\n\n  \n' + CMD_HELP, MessageType.text,{quoted: message.data}); 
         }
     }));
-    
+    }
 if (Config.WORKTYPE == 'public') {
     
      amazone.addCommand({pattern: 'alexa ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
