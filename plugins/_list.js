@@ -168,7 +168,8 @@ if (Config.WORKTYPE == 'public') {
                 }
             );
             await message.client.sendMessage(message.jid, Config.BOT_NAME + '\n\n  \n' + CMD_HELP, MessageType.text,{quoted: message.data}); 
-        else {
+       }
+       else {
             var CMD_HELP = '';
             amazone.commands.map(
                 async (command) =>  {
