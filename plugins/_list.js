@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'private') {
         }
     }));
     
-else if (Config.WORKTYPE == 'public') {
+if (Config.WORKTYPE == 'public') {
     
      amazone.addCommand({pattern: 'alexa ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
          
