@@ -56,6 +56,11 @@
             "required": false,
             "value": "👩‍🦰©Amazone Alexa"
         },
+        "CAPTIONS": {
+            "description": "LOGO CAPTIONS - නොට්ගෙන් එන LOGO එකක Caption එක",
+            "required": false,
+            "value": "👩‍🦰©Amazone Alexa"
+        },
         "WHATS_LINK_BLOCK": {
             "description": "Link Blocking System.- this one blocks whatsapp group  link",
             "required": true,
