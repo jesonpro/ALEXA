@@ -12,7 +12,7 @@ const Lang = Language.getString('_amazone');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amazone.addCommand({pattern: ' + Config.PANEL_COMMAND + ', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: ´${Config.PANEL_COMMAND}´, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
