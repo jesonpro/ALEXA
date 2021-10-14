@@ -13,7 +13,7 @@ const Lang = Language.getString('_amazone');
 
 if (Config.WORKTYPE == 'private') {
 
-    amazone.addCommand({pattern: '1alexa ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    amazone.addCommand({pattern: 'alexa ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
         
         var CMD_HELP = '';
         if (match[1] === '') {
