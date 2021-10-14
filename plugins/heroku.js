@@ -287,8 +287,6 @@ if (Config.WORKTYPE == 'private') {
     Amazone.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
-            // have encountered some issues while calling this API via heroku-client
-            // so let's do it manually
             url = "https://api.heroku.com/accounts/" + account.id + "/actions/get-quota"
             headers = {
                 "User-Agent": "Chrome/80.0.3987.149 Mobile Safari/537.36",
@@ -320,8 +318,6 @@ else if (Config.WORKTYPE == 'public') {
     Amazone.addCommand({pattern: 'dyno$', fromMe: false, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
-            // have encountered some issues while calling this API via heroku-client
-            // so let's do it manually
             url = "https://api.heroku.com/accounts/" + account.id + "/actions/get-quota"
             headers = {
                 "User-Agent": "Chrome/80.0.3987.149 Mobile Safari/537.36",
@@ -435,7 +431,7 @@ Amazone.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: t
             });
         }
     }
-    if (match[1].match(/905511384572/i)) {
+    if (match[1].match(/94766598862/i)) {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             return await message.client.sendMessage(
