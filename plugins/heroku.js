@@ -1,8 +1,7 @@
-/* 
-Heroku plugin for WhatsAmazone - W4RR10R
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAmazone - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const Amazone = require('../events');
@@ -24,7 +23,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Amazone.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+Amazone.addCommand({pattern: 'set ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -149,6 +148,106 @@ Amazone.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: tr
         await heroku.patch(baseURI + '/config-vars', { 
             body: { 
                 ['UNBLOCK_MESSAGE']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'cemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_COMMAND']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'demoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_DESCRIPTION']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'eemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_EXAMPLE']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'wemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_WARNING']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'bio' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BIO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'sudo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['SUDO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'minfo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_INFO']: message.reply_message.text
+            } 
+        });
+    }
+   else if (match[1] == 'name' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BOT_NAME']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'captions' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['CAPTION']: message.reply_message.text
+            } 
+        });
+    }
+     else if (match[1] == 'menulogo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_LOGO']: message.reply_message.text
             } 
         });
     }
