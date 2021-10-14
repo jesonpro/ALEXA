@@ -2,6 +2,7 @@ const Amazon = require('../events');
 const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
+const hrs = new Date().getHours({ timeZone: Config.TIME_ZONE })
 const Language = require('../language');
 const Lang = Language.getString('amazone');
 const tk = Config.WORKTYPE == 'public' ? false : true
