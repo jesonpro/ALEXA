@@ -173,13 +173,24 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╭───────────►
  │*⚙️BOT SETTINGS*
  │
- │► .setname  [ change Bot name]
+ │► .name  [ change Bot name]
  │► .pp [set profilr pic]
  │►.autobio on/off [change bio ]
  │►.whatsblock on [WA link Block]
  │►.inblock on /off 
  │►.work public /private
  │►.setrules
+ │► .set
+ │ ▷cemoji 🛡️ [change Cmd emoj]
+ │ ▷demoji 🔍 [change des emoj]
+ │ ▷eemoji 🔆 [change ex emoji]
+ │ ▷wemoji ⚠️ [change war emoj]
+ │ ▷name <bot name> [change NAME]
+ │ ▷bio <your Text> [change bio]
+ │ ▷menulogo <link> [change Logo]
+ │ ▷captions <text> [change caption]
+ │ ▷minfo <text> [change Menu info]
+ │ ▷sudo <number> [add sudo]
  │    
  │    THANK FOR
  │          USING
