@@ -16,10 +16,40 @@
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 9478xxxxxxxxx (Sri lanka number +94)",
             "required": false
         },
+        "EMOJI_COMMAND": {
+            "description": "Panel Command emoji",
+            "required": false,
+            "value": "🛡️"
+        },
+        "EMOJI_DESCRIPTION": {
+            "description": "Panel Description emoji",
+            "required": false,
+            "value": "🔍"
+        },
+        "EMOJI_EXAMPLE ": {
+            "description": "Panel Example emoji",
+            "required": false,
+            "value": "🔆"
+        },
+        "EMOJI_WARNING": {
+            "description": "Panel Warning emoji",
+            "required": false,
+            "value": "⚠️"
+        },
+        "MENU_LOGO": {
+            "description": "",
+            "required": false,
+            "value": ""
+        },
+        "MENU_INFO": {
+            "description": "write Some Words about yor Bot You can Edite this",
+            "required": false,
+            "value": "ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ ɪꜱ ᴀ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ ꜰᴏʀ ᴡʜᴀᴛꜱᴀᴘᴘ. ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴛᴇᴇɴᴜ Use ᴇᴀꜱʏ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ᴘᴇʀᴇᴄᴛʟʏ..ꜱᴏ ᴀᴍᴀᴢᴋɴᴇ ᴀʟᴇxᴀ ɪꜱ ʙᴇꜱᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ!!"
+        },
         "LANGUAGE": {
-            "description": "Bot language. English => en,  සිංහල භාශාව සදහා => si",
+            "description": "Bot language. English => EN,  සිංහල භාශාව සදහා => SI",
             "required": true,
-            "value": "si"
+            "value": "SI"
         },
         "BIO": {
             "description": "Change Your live Bio | ඔබේ About එකට අවශ්‍ය දෙයක් මෙහි ලියන්න",
@@ -51,15 +81,15 @@
             "required": true,
             "value": "^[.!;]"
         },
-       "BOT_NAME": {
+        "BOT_NAME": {
             "description": "give a name you disire to give your bot (for auto reply white to identify)",
             "required": false,
             "value": "👩‍🦰©Amazone Alexa"
         },
         "CAPTIONS": {
-            "description": "LOGO CAPTIONS - නොට්ගෙන් එන LOGO එකක Caption එක",
+            "description": "LOGO CAPTIONS - බොට්ගෙන් LOGO එකක Caption එක",
             "required": false,
-            "value": "👩‍🦰©Amazone Alexa"
+            "value": "Made By👩‍🦰©Amazone Alexa"
         },
         "WHATS_LINK_BLOCK": {
             "description": "Link Blocking System.- this one blocks whatsapp group  link",
