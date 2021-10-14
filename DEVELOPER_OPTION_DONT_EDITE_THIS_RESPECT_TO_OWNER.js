@@ -27,14 +27,6 @@ module.exports = {
         DEVELOPER_TAG: process.env.DEVELOPE_TAG === undefined ? '👩‍🦰Amazone' : process.env.DEVELOPE_TAG,
         DEVELOPER_STATUS : process.env.DEVELOPER_STATUS === undefined ? '👩‍🦰ᴾᴼᵂᴱᴿᴱᴰ ᴮʸ ᴬᴹᴬᶻᴼᴺᴱ' : process.env.DEVELOPER_STATUS,
         DEVELOPE_ERROR: process.env.DEVELOPE_ERROR === undefined ? '' : process.env.A_TEENU,
-
-//=USE THIS FOR EDITION 
-//=©️TEENU-X
-//=
-//=
-//=
-//=
-
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
 A_TEENU: process.env.A_TEENU === undefined ? '' : process.env.A_TEENU,
