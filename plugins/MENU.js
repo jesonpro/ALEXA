@@ -29,7 +29,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │*ᴛʏᴘᴇ: `+Config.PANEL_COMMAND+`get full Command list
  ├─────────►
  │🌼HEY,  `+wish+`
- │ *👤Name:* `+Config.BOT_NAME
+ │ *👤Name:* `+Config.BOT_NAME`
  │ *💎Role:* Developer
  │*Time⌚:* `+time+`
  │*📡Server:* Digital Ocean
