@@ -13,21 +13,24 @@ const XN_D = "*Downloading Your EHI📑*"
 const TXN_D = "*💎Downloading Your APK*"
 const TXN_UP = "*Uploading Your APK🔅*"
 const DW_D = "*🔴Downloading DIALOG Whatsapp  EHI*"
-const DF_D = "*🔴Downloading DIALOG Facebook  EHI*"
-const DY_D = "*🔴Downloading DIALOG Youtube  EHI*"
-const DZ_D = "*🔴Downloading DIALOG Zoom EHI*"
 const HW_D = "*⚪Downloading HUTCH Whatsapp  EHI*"
-const HF_D = "*⚪Downloading HUTCH Facebook  EHI*"
-const HY_D = "*⚪Downloading HUTCH Youtube  EHI*"
 const MF_D = "*🔵Downloading MOBITEL  Facebook  EHI*"
-const MT_D = "*🔵Downloading MOBITEL  TWITTER   EHI*"
 
-Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.DRIVECOM}11tZut6v6qNYUpAGup-YTbdO7ozlxJWIs/view`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
+
+
+
+
+
+
+
+
+
 
 Neotro.addCommand({pattern: 'MTEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
