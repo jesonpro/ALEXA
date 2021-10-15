@@ -139,4 +139,29 @@ Neotro.addCommand({pattern: 'ZEHI ?(.*)', fromMe: tn, dontAddCommandList: true},
        var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90635`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
         }));
+ Amazon.addCommand({pattern: 'iapk', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
+            var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
+        await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
+🔵
 
+
+ `}) 
+ }));
+
+Amazon.addCommand({pattern: 'ehelp', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
+            var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
+        await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
+⚫
+
+
+ `}) 
+ }));
+
+Amazon.addCommand({pattern: 'connect', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
+            var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
+        await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
+🔵
+
+
+ `}) 
+ }));
