@@ -12,9 +12,11 @@ const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ ය�
 const XN_D = "*Downloading Your EHI📑*"
 const TXN_D = "*💎Downloading Your APK*"
 const TXN_UP = "*Uploading Your APK🔅*"
-const DW_D = "*🔴Downloading D hatsapp  EHI*"
-const HW_D = "*⚪Downloading HUTCH Whatsapp  EHI*"
-const MF_D = "*🔵Downloading MOBITEL  Facebook  EHI*"
+const W_D = "*🔴Downloading ALL Whatsapp  EHI*"
+const Y_D = "*⚪Downloading ALL Youtube  EHI*"
+const F_D = "*🔵Downloading ALL Facebook  EHI*"
+const T_D = "*⚫Downloading ALL Twitter  EHI*"
+const Z_D = "*🔘Downloading ALL Zoom EHI*"
 
 Neotro.addCommand({pattern: '1apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
