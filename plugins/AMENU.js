@@ -26,26 +26,26 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     var respoimage = await axios.get(`${Config.MENU_LOGO}`, { responseType: 'arraybuffer' })
     await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `        
 
- *╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」*
- │
- *│ᴛʏᴘᴇ: `+Config.PANEL_COMMAND+` get full Command list
+ ╭─⦁❲ ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ❳⦁
+ │`+Config.PANEL_COMMAND+`get full Command list
  ├─────────►
- *│🌼HEY,*  `+wish+`
- *│👤Name:* `+Config.BOT_NAME+`
- *│💎Role:* Developer
- *│Time⌚:* `+time+`
- *│📡Server:* Digital Ocean
- *│📦Frameworks:* Nodejs
- *│☬Working As*
- *│🛡️ `+Config.WORKTYPE+`*
- │ _©️ᴀᴍᴀᴢᴏɴᴇ-ᴛᴇᴇɴᴜ_
+ │ *🌼HEY,*  `+wish+`
+ │ *👤Name:* `+Config.BOT_NAME+`
+ │ *💎Role:* Developer
+ │ *⏰Time:* `+time+`
+ │ *📡Server:* Digital Ocean
+ │ *📦Frameworks:* Nodejs
+ │ *🪀Working As*
+ │ `+Config.WORKTYPE+`
+ │_©️ᴀᴍᴀᴢᴏɴᴇ-ᴛᴇᴇɴᴜ_
  ╰──────────►
 
- ╭──────────►
-*│🛡️BOT COMMANDS*
- │   ───────
+ ╭──────────⦁►
+ │  *🛡️BOT COMMANDS*
+ │──────────⦁►
  │
- │► . `+Config.PANEL_COMMAND+` [All command list]
+ │► . `+Config.PANEL_COMMAND+` 
+ │   [All command list]
  │► .alive [Check bot status]
  │► .bot [chat with bot]
  │► .Admin [ for owner ]
@@ -53,20 +53,20 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │►.update [check Update]
  │►.update now [get update ]
  │►.restart 
- ╰───────────►
+ ╰───────────⦁►
 
- ╭───────────►
- *│🧜‍♀STICKER COMMANDS*
- │      ───────
+ ╭───────────⦁►
+ │ *🧜‍♀STICKER COMMANDS*
+ │───────────⦁►
  │► .attp [text ]
  │► .sticker
  │► .photo
  │► .listp
- ╰────────────►
+ ╰────────────⦁►
 
- ╭────────────►
- *│🧞‍♀️TEXT TO IMG*
- │   ───────
+ ╭────────────⦁►
+ │ *🧞‍♀️TEXT TO IMG*
+ │────────────⦁►
  │► .textimg 
  │► .moretext 
  │► .ffpack [Free fire Logo pack]
@@ -78,127 +78,127 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │► .meme 
  │► .listp
  │► .mmpack
- ╰────────────►
+ ╰────────────⦁►
 
- ╭────────────►
- *│💰DOWNLOAD COMMANDS*
- │      ────────
- │► .video [ Yt Link]
+ ╭────────────⦁►
+ │*💰DOWNLOAD COMMANDS*
+ │────────────⦁►
+ │► .video [Yt Link]
  │►.mp4    [Name]
  │►.audio  [yt link ]
- │► .download  [status download]
- │►.song  [ song name ]
- │►.dcsong [ song name ]
- │►.img [ name ]
- │►.fb  link ]
- │►.tiktok [ link ]
- │►.vinsta  [ Insta Video ]
- │►.pinsta [ Insta Post ]
+ │►.download[status download]
+ │►.song   [song name ]
+ │►.dcsong [song name ]
+ │►.img    [name ]
+ │►.fb     [link ]
+ │►.tiktok [link ]
+ │►.vinsta [Insta Video ]
+ │►.pinsta [Insta Post ]
  │►.twt [twitter video Link]
  │►.mediafire
- ╰────────────►
+ ╰────────────⦁►
 
- ╭────────────►
- *│🔍SEARCH COMMANDS*
- │     ──────────
- │► .yt [ topic ]
- │► .wiki [text ]
- │► .movie [ movie name ]
- │► .github [ name ]
- │► .show [tv series ]
- │► .weather [ city ]
+ ╭────────────⦁►
+ │* 🔍SEARCH COMMANDS*
+ │────────────⦁►
+ │► .yt     [topic ]
+ │► .wiki   [text ]
+ │► .movie  [movie name ]
+ │► .github [name ]
+ │► .show   [tv series ]
+ │► .weather[city ]
  │
- ╰────────────►
+ ╰────────────⦁►
 
- ╭────────────►
- *│🛸GROUP COMMANDS*
- │  ─────────
+ ╭────────────⦁►
+ │*🛸GROUP COMMANDS*
+ │────────────⦁►
  │► .rename [change Group name]
- │► .rules    [check rules]
- │► .info [check details]
+ │► .rules  [check rules]
+ │► .info   [check details]
  │► .tagadmin 
  │►.antispm
  │►.clear
  │► .report
  │► .tagall  
- │► .ban [ for owner ]
- │► .add [ for owner ]
- │► .promote [ for owner ]
- │► .demote [ for owner ]
- │► .invite [ for owner ]
- │► .leave [ for owner ]
+ │► .ban    [for owner]
+ │► .add    [for owner]
+ │► .promote[for owner]
+ │► .demote [for owner]
+ │► .invite [for owner]
+ │► .leave  [for owner]
  │►.welcome 
  │►.goodbye
- ╰───────────►
+ ╰───────────⦁►
 
- ╭───────────►
- *│🎨MEDIA TOOLS*
- │      ───────
- │► .axmedia [25+ tools]
+ ╭───────────⦁►
+ │*🎨MEDIA TOOLS*
+ │───────────⦁►
+ │► .axmedia[25+ tools]
  │► .tblend
- │►.ocr [Read Text]
- │►.mp3 [Video To mp3]
+ │►.ocr     [Read Text]
+ │►.mp3     [Video To mp3]
  │► .ffmpeg [fade in:0:30 ]
  │► .removebg
- │► .spdf [convent site to pdf]
+ │► .spdf   [convent site to pdf]
  │► .voicy
- │► .unvoice [mp3 to voice]
- ╰───────────►
+ │► .unvoice[mp3 to voice]
+ ╰───────────⦁►
 
- ╭───────────►
- *│⚡MORE COMMAND*
- │  ────────
- │►.scan
- │►.brdmore
- │►.rdmore
- │►.tts
- │►.gm
- │►.gn
- │►.ftext
+ ╭───────────⦁►
+ │*⚡MORE COMMAND*
+ │───────────⦁►
+ │► .scan
+ │► .brdmore
+ │► .rdmore
+ │► .tts
+ │► .gm
+ │► .gn
+ │► .ftext
  │► .wallpaper
  │► .anime
  │► .listanim
  │► .device
  │► .currency
- │► .ss [link ]
- │► .afk [ bot is online ]
- │► .short { link ]
- │► .wame [ get user link ]
+ │► .ss   [link ]
+ │► .afk  [bot is online]
+ │► .short[link ]
+ │► .wame [get user link]
  │► .currency
- │► .trt { en si }
+ │► .trt  {en si }
  │► .notes
  │► .save
  │► .deleteNotes
- │► .covid  [ covid LK]
- ╰────────────►
+ │► .covid [covid LK]
+ ╰────────────⦁►
 
- ╭───────────►
- *│⚙️BOT SETTINGS*
- │    ───────
- │► .name  [ change Bot name]
- │► .pp [set profilr pic]
- │►.autobio on/off [change bio ]
- │►.whatsblock on [WA link Block]
- │►.inblock on /off 
- │►.work public /private
- │►.setrules
+ ╭────────────⦁►
+ │*⚙️BOT SETTINGS*
+ │────────────⦁►
+ │► .name [change Bot name]
+ │► .pp   [set profilr pic]
+ │► .autobio on/off [change bio ]
+ │► .whatsblock on [WA link Block]
+ │► .inblock on /off 
+ │► .work public /private
+ │► .setrules
  │► .set
- │ ▷cemoji 🛡️ [change Cmd emoj]
- │ ▷demoji 🔍 [change des emoj]
- │ ▷eemoji 🔆 [change ex emoji]
- │ ▷wemoji ⚠️ [change war emoj]
+ │ ▷cemoji 🛡️  [change Cmd emoj]
+ │ ▷demoji 🔍  [change des emoj]
+ │ ▷eemoji 🔆  [change ex emoji]
+ │ ▷wemoji ⚠️  [change war emoj]
  │ ▷name <bot name> [change NAME]
  │ ▷bio <your Text> [change bio]
  │ ▷menulogo <link> [change Logo]
  │ ▷captions <text> [change caption]
- │ ▷minfo <text> [change Menu info]
+ │ ▷minfo <text>  [change Menu info]
  │ ▷sudo <number> [add sudo]
  │    
- │    THANK FOR
- │          USING
- │ AMAZONE ALEXA ✉️
- │©️TEENU-X
- ╰───────────►
+ │THANK FOR USING
+ │
+ │ ❲ AMAZONE ALEXA ❳
+ │    ©️TEENU-X
+ ╰───────────⦁►
  
 `}) 
 
