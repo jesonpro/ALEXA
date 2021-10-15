@@ -7,6 +7,7 @@ NEOTROX - TEENUHX
 const Amazone = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
+const Tenu = require('apk-downloader');
 const config = require('../config');
 const Config = require('../config');
 let tn = Config.WORKTYPE == 'public' ? false : true
