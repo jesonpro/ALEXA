@@ -175,27 +175,26 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╭───────────●●►
  *│⚙️BOT SETTINGS*
  │    ───────
- │► .name  [ change Bot name]
  │► .pp [set profilr pic]
  │►.autobio on/off [change bio ]
  │►.whatsblock on [WA link Block]
  │►.inblock on /off 
  │►.work public /private
  │►.setrules
- │► .set
- │ ▷cemoji 🛡️ [change Cmd emoj]
- │ ▷demoji 🔍 [change des emoj]
- │ ▷eemoji 🔆 [change ex emoji]
- │ ▷wemoji ⚠️ [change war emoj]
- │ ▷name <bot name> [change NAME]
- │ ▷bio <your Text> [change bio]
- │ ▷menulogo <link> [change Logo]
- │ ▷captions <text> [change caption]
- │ ▷minfo <text> [change Menu info]
- │ ▷sudo <number> [add sudo]
+ │► .setvar
+ │ ▷EMOJI_COMMAND:🛡️ [change Cmd emoj]
+ │ ▷EMOJI_DESCRIPTION:  🔍 [change des emoj]
+ │ ▷EMOJI_EXAMPLE:🔆 [change ex emoji]
+ │ ▷EMOJI_WARNING:⚠️ [change war emoj]
+ │ ▷BOT_NAME: <bot name> [change NAME]
+ │ ▷BIO: <your Text> [change bio]
+ │ ▷MENU_LOGO: <link> [change Logo]
+ │ ▷CAPTION: <text> [change caption]
+ │ ▷MENUINFO: <text> [change Menu info]
+ │ ▷SUDO: <number> [add sudo]
  │    
  │    THANK FOR
- │          USING
+ │     USING
  │ AMAZONE ALEXA ✉️
  │©️TEENU-X
  ╰───────────●●►
