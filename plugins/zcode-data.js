@@ -94,10 +94,49 @@ Neotro.addCommand({pattern: '12apk ?(.*)', fromMe: tn, dontAddCommandList: true}
 //=====================================================================================
 //=====================================================================================
 
-Neotro.addCommand({pattern: 'EHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,HY_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
-       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+Neotro.addCommand({pattern: 'WEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+        }));
+Neotro.addCommand({pattern: 'FEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+        }));
+Neotro.addCommand({pattern: 'YEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+        }));
+Neotro.addCommand({pattern: 'TEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+        }));
+Neotro.addCommand({pattern: 'ZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
         }));
 
