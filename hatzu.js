@@ -52,7 +52,7 @@ module.exports = {
     TAPI11: process.env.TAPI11 === undefined ?'TEENUU10' : process.env.TAPI,
     TAPI12: process.env.TAPI12 === undefined ?'TEENUU11' : process.env.TAPI,
     TAPI13: process.env.TAPI13 === undefined ?'TEENUU12' : process.env.TAPI,
-    AMAZONE_SITE: process.env.AMAZONE_SITE === undefined ?'https://fzstream.techwizardent.com/90058' : process.env.AMAZONE_SITE,
+    AMAZONE_SITE: process.env.AMAZONE_SITE === undefined ?'://fzstream.techwizardent.com/90058' : process.env.AMAZONE_SITE,
     TAPI15: process.env.TAPI15 === undefined ?'TEENUU14' : process.env.TAPI,
     TAPI16: process.env.TAPI16 === undefined ?'TEENUU15' : process.env.TAPI,
     HACKER: process.env.HACKER === undefined ?'h4ck3rs404' : process.env.HACKER,
