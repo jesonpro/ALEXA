@@ -732,11 +732,11 @@ Amazone.addCommand({pattern: 'dcsong ?(.*)', fromMe: tn, desc: Dlang.SONG}, (asy
         }
     }));
 
-Amazone.addCommand({ pattern: 'apk ?(.*)', fromMe: tn, desc: DLang.APK_DESC,  deleteCommand: false}, async (message, match) => {
+Amazone.addCommand({ pattern: 'apk ?(.*)', fromMe: tn, desc: Dlang.APK_DESC,  deleteCommand: false}, async (message, match) => {
 
     const pack = match[1]
           
-    if (!pack) return await message.client.sendMessage(message.jid,DLang.APK_NEED,MessageType.text, {quoted: message.data})
+    if (!pack) return await message.client.sendMessage(message.jid,Dlang.APK_NEED,MessageType.text, {quoted: message.data})
 
     if (pack.includes('=')) {
         var split = pack.split('=');
@@ -748,11 +748,11 @@ Amazone.addCommand({ pattern: 'apk ?(.*)', fromMe: tn, desc: DLang.APK_DESC,  de
     var apkinfo = await Tenu.apk_info(link)
 
     const app = await axios.get(apkinfo.ic, {responseType: 'arraybuffer'})
-    await message.client.sendMessage (message.jid, Buffer.from (app.data), MessageType.image, {mimetype: Mimetype.png, caption: DLang.APK_D + DLang.APK_N + apk.name + DLang.APK_DEV + apk.auth + DLang.APK_V + apk.vers + DLang.APK_SUM + apkinfo.summ })
+    await message.client.sendMessage (message.jid, Buffer.from (app.data), MessageType.image, {mimetype: Mimetype.png, caption: Dlang.APK_D + Dlang.APK_N + apk.name + Dlang.APK_DEV + apk.auth + Dlang.APK_V + apk.vers + Dlang.APK_SUM + apkinfo.summ })
 
-    var downloading = await message.client.sendMessage(message.jid,DLang.APK_DW,MessageType.text, {quoted: message.data});
+    var downloading = await message.client.sendMessage(message.jid,Dlang.APK_DW,MessageType.text, {quoted: message.data});
     const profileBuffer = await axios.get(apk.link, {responseType: 'arraybuffer'})
-    var uploading = await message.client.sendMessage(message.jid,DLang.APK_UP,MessageType.text, {quoted: message.data});
+    var uploading = await message.client.sendMessage(message.jid,Dlang.APK_UP,MessageType.text, {quoted: message.data});
     await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.document, {filename: apk.name + '.apk', mimetype: 'application/vnd.android.package-archive', quoted: message.data})
     await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     return await message.client.deleteMessage(message.jid, {id: uploading.key.id, remoteJid: message.jid, fromMe: true})
