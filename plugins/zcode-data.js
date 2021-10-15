@@ -30,19 +30,19 @@ Neotro.addCommand({pattern: '2apk ?(.*)', fromMe: tn, dontAddCommandList: true},
       }));
 Neotro.addCommand({pattern: '3apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90274`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '4apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90276`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '5apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90278`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
