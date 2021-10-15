@@ -586,6 +586,16 @@
             "BLIST": "TTP ලැයිස්තුව පෙන්වයි.",
             "CLIST": "ANIME WALLPAPER ලැයිස්තුව පෙන්වයි.",
             "TIKTOK": "ටික් ටොක් වීඩියො බාගත කරයි.",
+            "APK_DESC": "Playstore Download කරයි.",
+            "APK_NEED": "Playstore app link ඇතුළත් කරන්න.",
+            "NO_APK": "වලංගු playstore app link ඇතුළත් කරන්න.",
+            "APK_DW": "\n💰ඔබගේ APK download කරමින් පවති...\n",
+            "APK_UP": "\n🚀ඔබගේ APK upload කරමින් පවති...\n",
+            "APK_D": "▸ 🛸APK Description ◂\n\n",
+            "APK_N": "🛡️ APK Name : ",
+            "APK_DEV": "\n👨🏻‍💻 Developer : ",
+            "APK_V": "\n📟 Version : ",
+            "APK_SUM": "\n🔎info : ",
             "NOT_AVAILABLE": "👩‍🦰Amazone chat bot Disabled."
         },
         "covid": {
