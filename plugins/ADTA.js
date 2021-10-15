@@ -15,10 +15,10 @@ const Lang = Language.getString('amazone');
   *────────*
 
 *╭─「  මොනවද මේ EHI 🤔」*
-│🛡️.help
+│🛡️.ehelp
 ╰──────►
 *╭─「 කොහොමද  CONNECT කරන්නෙ😐」*
-│🛡️.connection 
+│🛡️.connect 
 ╰───────►
  *╭─「  INJECTOR APK🤩」*
 │🛡️.iapk
