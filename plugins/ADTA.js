@@ -7,7 +7,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-    Amazone.addCommand({pattern: 'basichelp', fromMe: true, dontAddCommandList:true}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'freedata', fromMe: true, }, (async (message, match) => {
             
             var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
        
