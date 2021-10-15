@@ -139,6 +139,12 @@ Neotro.addCommand({pattern: 'ZEHI ?(.*)', fromMe: tn, dontAddCommandList: true},
        var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90635`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
         }));
+
+
+//=======================🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣==============================================================
+//=====================================================================================
+
+
  Amazon.addCommand({pattern: 'iapk', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
             var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
         await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
@@ -217,8 +223,19 @@ Ehi ෆයිල් කියන්නෙ Https injector app (isp ලාගේ �
 Amazon.addCommand({pattern: 'connect', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
             var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
         await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
-🔵
 
+*🤔කොහොමද Connect කරගන්නෙ?*
+
+🔘ඉස්සෙලම ඔයාගෙ සිම් එකට අදාළ පැකේජ් එකක් Active කරගන්න. whatsapp facebook etc:
+
+🔵VPN මගින් අන්තර්ජාලයට සම්බන්ධ වීමට Injecter APP එකක් ඔබ Install කරගන්න ඕන. http injector recommend
+
+🔵දැන් ඔයා Active කරපු පැකේජ් එකට අදාල EHI FILE එක Download කරලා Open කරන්න. (install කරපු injector එකෙන්)
+
+🔵APP එක open උනාම Start CLICK කරන්න Vpn on කරන්න අදාළ permission ඉල්ලයි ඒවා දෙන්න..
+දැන් ඔයාට පැකේජ් එක මගින් අන්තර්ජාලය පිවිසිය හැකියි...
+
+💰📦
 
  `}) 
  }));
