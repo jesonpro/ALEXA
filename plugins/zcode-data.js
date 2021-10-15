@@ -18,13 +18,13 @@ const MF_D = "*🔵Downloading MOBITEL  Facebook  EHI*"
 
 Neotro.addCommand({pattern: '1apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90270`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '2apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90272`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
