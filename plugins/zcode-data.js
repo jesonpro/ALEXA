@@ -142,7 +142,53 @@ Neotro.addCommand({pattern: 'ZEHI ?(.*)', fromMe: tn, dontAddCommandList: true},
  Amazon.addCommand({pattern: 'iapk', fromMe: tn, dontaddCommandList:true}, (async (message, match) => {
             var image = await axios.get (`https://telegra.ph/file/23a41831a5cc8d78314a1.jpg`, {responseType: 'arraybuffer'})
         await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
-🔵
+
+*🚀INJECTOR PANEL*
+
+_____________
+📦NO CONFIG APP
+────────
+
+(1)🛸Cyber Inject Pro🛸
+*🔎 .1apk*
+
+(2)⚙️Cyber V2Ray[NEW]⚙️
+*🔎 .2apk*
+
+────────
+📦CONFIG APPS
+────────
+
+(3)🔥 Http Injector 🔥
+*🔎 .3apk*
+
+(4)💕 Http Injector Lite 💕
+*🔎 .4apk*
+
+(5)💙 TLS Tunnel App 💙
+*🔎 .5apk*
+
+(6)🚀 Http Custom 🚀
+*🔎 .6apk*
+
+(7)🍕 Stocks Http 🍕
+*🔎 .7apk*
+
+───────
+ 📦WINDOWS
+───────
+
+(8)🔰 GlassWire 🔰
+*🔎 .8apk*
+
+(9)⚙️ ProxyChecker ⚙️
+*🔎 .9apk*
+
+(10)🌺  TCP Over SSL Tunnel 🌺
+*🔎 .10apk*
+
+(11)🌷  SVI Injector 🌷
+*🔎 .11apk*
 
 
  `}) 
