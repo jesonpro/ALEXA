@@ -30,7 +30,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │
  *│ᴛʏᴘᴇ: `+Config.PANEL_COMMAND+` get full Command list
  ├─────────●●►
- *│🌼HEY,*  `+wish+`
+ *│🌼HEY,* (user.split("@")[0]) `+wish+`
  *│👤Name:* `+Config.BOT_NAME+`
  *│💎Role:* Developer
  *│Time⌚:* `+time+`
