@@ -12,7 +12,38 @@ const Lang = Language.getString('system_stats');
             var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
        
         await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
- 
+ *🧪EHI  PANEL*
+*────────────*
+  *────────*
+
+*╭─「  මොනවද මේ EHI 🤔」*
+│🛡️.help
+╰──────►
+*╭─「 කොහොමද  CONNECT කරන්නෙ😐」*
+│🛡️.connection 
+╰───────►
+ *╭─「  INJECTOR APK🤩」*
+│🛡️.iapk
+╰──────►
+
+*╭─「  WHATSAPP ALL EHI」*
+│🔴 .WEHI
+╰──────►
+*╭─「 YOUTUBE ALL EHI」*
+│⚪ .YEHI
+╰──────►
+*╭─「  FACEBOOK ALL EHI」*
+│🔵 .FEHI
+╰──────►
+*╭─「  ZOOM ALL EHI」*
+│⚫ .ZEHI
+╰──────►
+*╭─「  TWITTER  EHI」*
+│🔘 .TEHI
+╰──────►
+
+©️ɴᴛʀᴏ-ᴛᴇᴇɴᴜ
+
 `}) 
 
  }));
