@@ -10,14 +10,6 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
 const os = require('os');
-const { config } = require('process');
-var clh = { cd: 'MjA4NDE5NTEyMDAzMDk=', pay: '', set: 'Q29uZmlnLlZFUklGWUlOR19ZT1VSX1VTRVJfQk9UX1BMRUFTRV9XQUlU', set_py: ''}    
-var ggg = Buffer.from(clh.cd, 'base64')
-var ddd = ggg.toString('utf-8')
-clh.pay = ddd
-var hhh = Buffer.from(clh.set, 'base64')
-var eee = hhh.toString('utf-8')
-clh.set_py = eee
 
 let wk = Config.WORKTYPE == 'public' ? false : true
   
