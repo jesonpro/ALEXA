@@ -8,13 +8,31 @@ const NEED = "*🍭YOU MUST TYPE SOME WORDS*"
 const desc = "Text to image Pack";
 let tn = Config.WORKTYPE == 'public' ? false : true
 
-Neotro.addCommand({ pattern: 'wordgreen ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'w1 ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(NEED);
 
-        var ttinullimage = await axios.get(`https://${config.BSITE}/api/ephoto/wordgreen?text=${encodeURIComponent(match[1])}&apikey=${config.BAPI}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://hadi-api.herokuapp.com/api/textpro/3d-underwater-text?teks=hi`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+
+    }));
+Neotro.addCommand({ pattern: 'w2 ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(NEED);
+
+        var ttinullimage = await axios.get(`https://hadi-api.herokuapp.com/api/textpro/3d-underwater-text?teks=hi`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.png, caption: Config.CAPTIONS})
+
+    }));
+Neotro.addCommand({ pattern: 'w3 ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(NEED);
+
+        var ttinullimage = await axios.get(`https://hadi-api.herokuapp.com/api/textpro/3d-underwater-text?teks=hi`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.document, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
 
     }));
 
