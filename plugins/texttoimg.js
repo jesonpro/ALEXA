@@ -3,7 +3,7 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const config = require('../hatzu');
+const config = require('./Config/Config/config');
 const NEED = "*🍭YOU MUST TYPE SOME WORDS*"
 const desc = "Text to image Pack";
 let tn = Config.WORKTYPE == 'public' ? false : true
