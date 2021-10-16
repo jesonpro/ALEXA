@@ -12,7 +12,7 @@ Neotro.addCommand({ pattern: 'w1 ?(.*)', fromMe: tn,dontAddCommandList: true}, (
 
         if (match[1] === '') return await message.sendMessage(NEED);
 
-        var ttinullimage = await axios.get(`https://hadi-api.herokuapp.com/api/textpro/3d-underwater-text?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.{ENCRYPTION}${TOXIC_T}3d-underwater-text?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
 
