@@ -44,43 +44,43 @@ Neotro.addCommand({pattern: '4apk ?(.*)', fromMe: tn, dontAddCommandList: true},
       }));
 Neotro.addCommand({pattern: '5apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89701`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '6apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90276`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89702`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '7apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90278`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89706`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '8apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90573`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89728`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '9apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90575`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89709`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '10apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90571`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITEE}89710`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 Neotro.addCommand({pattern: '11apk ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}90579`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.AMAZONE_SITE}89711`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
