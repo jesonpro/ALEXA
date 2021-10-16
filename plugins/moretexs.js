@@ -29,12 +29,12 @@ Amazone.addCommand({pattern: '1rn ?(.*)', fromMe: wk, dontAddCommandList: true},
     
     var webimage = await axios.get(`https://hadi-api.herokuapp.com/api/photoxy/metalic-gold?teks=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType., {caption: Config.CAPTIONS, thumbnail: Buffer.from(webimage.data)})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image {caption: Config.CAPTIONS, thumbnail: Buffer.from(webimage.data)})
 
     }));
 
   
-Amazone.addCommand({pattern: '1rn ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Amazone.addCommand({pattern: '2rn ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
     
