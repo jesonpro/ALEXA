@@ -13,13 +13,13 @@ const os = require('os');
 
 let wk = Config.WORKTYPE == 'public' ? false : true
   
- Amazone.addCommand({pattern: 'flame ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+ Amazone.addCommand({pattern: 'rn ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
       
     var webimage = await axios.get(`https://hadi-api.herokuapp.com/api/photoxy/flaming-fire?teks=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTIONS})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
 
      }));
   
