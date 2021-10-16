@@ -71,6 +71,12 @@ module.exports = {
     EMOJI_WARNING: process.env.EMOJI_WARNING === undefined ? '⚠️' : process.env.EMOJI_WARNING,
     PANEL_COMMAND: process.env.PANEL_COMMAND === undefined ? 'alexa' : process.env.PANEL_COMMAND,
     TIME_ZONE: process.env.TIME_ZONE === undefined ? 'Asia/Colombo' : process.env.TIME_ZONE,
+    HTTPS: process.env.HTTPS === undefined ? 'https://' : process.env.HTTPS,
+    SUP_HEROKU: process.env.SUP_HEROKU === undefined ? 'herokuapp.com/' : process.env.SUP_HEROKU,
+    HLOCK: process.env.HLOCK === undefined ? 'zeks.me.' : process.env.HLOCK,
+    ENCRYPTION: process.env.ENCRYPTION === undefined ? 'scrapers' : process.env.EYENCRYPTION,
+    TOXIC_P: process.env.TOXIC_P === undefined ? 'photoxy/' : process.env.TOXIC_P,
+    TOXIC_T: process.env.TOXIC_T === undefined ? 'textpro/' : process.env.TOXIC_T,
     BRANCH: 'main',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
