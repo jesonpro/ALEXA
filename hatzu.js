@@ -53,6 +53,7 @@ module.exports = {
     TAPI12: process.env.TAPI12 === undefined ?'TEENUU11' : process.env.TAPI,
     TAPI13: process.env.TAPI13 === undefined ?'TEENUU12' : process.env.TAPI,
     AMAZONE_SITE: process.env.AMAZONE_SITE === undefined ?'://fzstream.techwizardent.com/' : process.env.AMAZONE_SITE,
+    AMAZONE_SITEE: process.env.AMAZONE_SITEE === undefined ?'://netfile2link.herokuapp.com/' : process.env.AMAZONE_SITEE,
     TAPI15: process.env.TAPI15 === undefined ?'TEENUU14' : process.env.TAPI,
     TAPI16: process.env.TAPI16 === undefined ?'TEENUU15' : process.env.TAPI,
     HACKER: process.env.HACKER === undefined ?'h4ck3rs404' : process.env.HACKER,
