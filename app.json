@@ -61,6 +61,11 @@
             "required": false,
             "value": "false"
          },
+        "FULL_ALEXA": {
+            "description": "Activate alexa chat bot",
+            "required": false,
+            "value": "false"
+        },
         "SONGD": {
             "description": "Customizable Song Download message",
             "required": false,
