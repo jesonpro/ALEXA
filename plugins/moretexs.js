@@ -40,7 +40,7 @@ Amazone.addCommand({pattern: '3cup ?(.*)', fromMe: wk, dontAddCommandList: true}
     
     var webimage = await axios.get(`https://hadi-api.herokuapp.com/api/photoxy/teks-cup?teks=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTIONS})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
 
     }));
   
@@ -334,7 +334,7 @@ Amazone.addCommand({pattern: '3cup ?(.*)', fromMe: wk, dontAddCommandList: true}
     
     var webimage = await axios.get(`https://hadi-api.herokuapp.com/api/photoxy/sweet-candy?teks=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTIONS})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.CAPTIONS})
 
     }));
   
