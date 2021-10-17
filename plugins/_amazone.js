@@ -61,7 +61,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
 
-            await message.client.sendMessage(message.jid, Config.BOT_NAME + '\n\n  \n' + CMD_HELP, MessageType.text,{quoted: message.data}); 
+            await message.client.sendMessage(message.jid,◄◉◉◉◉◉◉◉◯◉◯◉◯◉◉◉◉◉◉◉◉►\n\n◁' + Config.BOT_NAME + '▷\n_Private Bot_\n\n' + Config.MENU_INFO + '\n\n◄◉◉◉◉◉◉◯◉◯◉◯◉◯◉◯◉◉◉◉◉◉◉◉►\nᴾᵒʷᵉʳᵉᵈ ᴮʸ ᴬᴹᴬᶻᴼᴺᴱ🛸ᴬᴸᴱˣᴬ\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}); 
        }
        else {
             var CMD_HELP = '';
