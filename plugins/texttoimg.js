@@ -19,12 +19,12 @@ Neotro.addCommand({ pattern: 'lcube ?(.*)', fromMe: tn,dontAddCommandList: true}
         var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_T}futuristic-technology?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'blogo ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
         var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_T}black-white-bear-mascot?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: 'blogo ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
         var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_T}neon-devil-wings?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
