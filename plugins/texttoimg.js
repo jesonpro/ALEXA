@@ -91,3 +91,5 @@ Neotro.addCommand({ pattern: 'galaxyangel ?(.*)', fromMe: tn,dontAddCommandList:
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
 
+//=====================================================================================
+//=====================================================================================
