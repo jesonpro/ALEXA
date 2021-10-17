@@ -44,7 +44,7 @@ Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true
 
 Neotro.addCommand({ pattern: 'water3d ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}water3d?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://h4ck3rs404-api.herokuapp.com/api/ephoto/galaxyangel?text=h4ck3rs404&apikey=h4ck3rs404`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
 Neotro.addCommand({ pattern: 'starmetalic ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
