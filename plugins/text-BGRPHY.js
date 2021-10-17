@@ -1,7 +1,14 @@
 
-
-
-
+const Neotro = require('../events');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const fs = require('fs');
+const axios = require('axios');
+const Config = require('../config');
+const hatzu = require('../hatzu');
+const config = require('../Config/config');
+const NEED = "*🍭YOU MUST TYPE SOME WORDS*"
+const desc = "Text to image Pack";
+let tn = Config.WORKTYPE == 'public' ? false : true
 
 Neotro.addCommand({ pattern: 'zombie3d ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
