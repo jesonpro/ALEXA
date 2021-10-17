@@ -42,23 +42,46 @@ Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true
 //=====================================================================================
 //====================================================================================
 
-Neotro.addCommand({ pattern: ' ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'water3d ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}water3d?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: ' ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'starmetalic ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}starmetalic?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: ' ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'moon ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}moon?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: ' ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({ pattern: 'galaxystyle ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}galaxystyle?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+    }));
+
+Neotro.addCommand({ pattern: 'loveshadow ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+        if (match[1] === '') return await message.sendMessage(NEED);
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}loveshadow?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+    }));
+
+Neotro.addCommand({ pattern: 'galaxyangel ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+        if (match[1] === '') return await message.sendMessage(NEED);
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}galaxyangel?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+    }));
+
+Neotro.addCommand({ pattern: 'underwater ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+        if (match[1] === '') return await message.sendMessage(NEED);
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}underwater?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+    }));
+Neotro.addCommand({ pattern: 'halloween ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+        if (match[1] === '') return await message.sendMessage(NEED);
+        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}halloween?text=${encodeURIComponent(match[1])}&${config.DECODE}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
