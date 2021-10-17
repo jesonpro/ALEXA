@@ -1,3 +1,13 @@
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX උස්සන්න හදන්න එපා 😂 API search කරලා රෙපො එකටම උක්කවනවා 😂 වේසා පක්කු
+🛡️QUEEN ALEXA - අව්ලක් නෑ🛡️ 😌 අනිත් එක පකෙක්වත් උස්සන්න හදන්න එපා
+
+©️TEENUH-X
+*/
+
+
 const Neotro = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -34,22 +44,6 @@ Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true
 
 Neotro.addCommand({ pattern: 'v ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_P}?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HTTPS}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_P}?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
-Neotro.addCommand({ pattern: 'v ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
-        if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_P}?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
-    }));
-Neotro.addCommand({ pattern: 'v ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
-        if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_P}?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
-    }));
-Neotro.addCommand({ pattern: 'v ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
-        if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTPS}${config.HLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_P}?teks=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
-    }));
-
