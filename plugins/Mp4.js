@@ -2,7 +2,6 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 NEOTROX - TEENUHX
-*/
 
 const amazone = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
@@ -21,7 +20,7 @@ const NO_RESULT = "*🌀can't Find Anything...*"
 
         const link = match[1]
     
-        if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
+        if (!link) return await 8.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
           .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
@@ -66,3 +65,4 @@ if (Config.WORKTYPE == 'public') {
       },
     )
 }
+*/
