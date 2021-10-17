@@ -9,7 +9,7 @@ const Config = require('../config');
 const config = require('../hatzu');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
-const tenu = require('..DEVELOPER_OPTION_DONT_EDITE_THIS_RESPECT_TO_OWNER/');
+const tenu = require('../DEVELOPER_OPTION_DONT_EDITE_THIS_RESPECT_TO_OWNER');
 const axios = require('axios');
 let am = Config.WORKTYPE == 'public' ? false : true
 const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
