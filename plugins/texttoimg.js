@@ -44,7 +44,7 @@ Neotro.addCommand({ pattern: 'dwings ?(.*)', fromMe: tn,dontAddCommandList: true
 
 Neotro.addCommand({ pattern: 'water3d ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
-        var ttinullimage = await axios.get(`${config.HTTP}${config.HCLOCK}${config.SUP_HEROKU}${config.ENCRYPTION}${config.TOXIC_E}starmetalic?text=${encodeURIComponent(match[1])}&apikey=${config.DECODE}`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${config.HP}${config.HK}${config.SUP}${config.TNU}$config.PE}starmetalic?text=&apikey=${config.DECODE}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
 Neotro.addCommand({ pattern: 'starmetalic ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
