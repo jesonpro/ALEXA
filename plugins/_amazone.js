@@ -120,7 +120,7 @@ if (Config.WORKTYPE == 'private') {
     }
 if (Config.WORKTYPE == 'public') {
     
-     amazone.addCommand({pattern:`${Config.PANEL_COMMAND}`, fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+     amazone.addCommand({pattern: `${Config.PANEL_COMMAND} ?(.*)`, fromMe: false, dontAddCommandList: true}, (async (message, match) => {
          
         var CMD_HELP = '';
         if (match[1] === '') {
