@@ -1,4 +1,4 @@
-FROM quay.io/lyfe00011/bot:beta
+FROM fusuf/whatsasena:latest
 
 RUN git clone https://github.com/jesonpro/ALEXA /root/ales
 WORKDIR /root/ales/
