@@ -46,7 +46,7 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Amazone.addCommand({pattern: "covid ?(.*)", fromMe: true, desc: Clang.COV_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amazone.addCommand({pattern: "watch lk ?(.*)", fromMe: true, desc: Clang.COV_DESC, dontAddCommandList: true}, (async (message, match) => {
           if (match[1] === "sl" || match[1] === "srilanka" || match[1] === "Sri lanka" || match[1] === "Srilnka" || match[1] === "srelanka") {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Sri Lanka").then(async ok  => {
@@ -72,7 +72,7 @@ if (config.WORKTYPE == 'private') {
 
 else if (config.WORKTYPE == 'public') {
 
-       Amazone.addCommand({pattern: "covid ?(.*)", fromMe: false, desc: Clang.COV_DESC, dontAddCommandList: true}, (async (message, match) => {
+       Amazone.addCommand({pattern: "watch lk ?(.*)", fromMe: false, desc: Clang.COV_DESC, dontAddCommandList: true}, (async (message, match) => {
           if (match[1] === "sl" || match[1] === "srilanka" || match[1] === "Sri lanka" || match[1] === "Srilnka" || match[1] === "srelanka") {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Sri Lanka").then(async ok  => {
