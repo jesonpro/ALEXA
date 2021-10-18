@@ -12,10 +12,7 @@ const Lang = Language.getString('amazone');
 let fs = Config.WORKTYPE == 'public' ? false : true
 const TT = 'Show super TTP PACK'
 
-Neotro.addCommand({pattern: 'textimg', fromMe: fs, desc: Lang.ALIST}, (async (message, match) => {
-    await message.sendMessage("╭─「 👩‍🦰LOGO PACK 」\n│ \n*│💰How To Create Logo*\n│🔅Example : .holo hi\n│🔅Example : .glitch Amazone/Alexa\n│🔅Example : Command <your text>\n│\n│ • holo\n│ • glitch\n│ • s3d\n│ • nlogo\n│ • blackpink\n│ • neonlight\n│ • ninjalogo\n│ • 3dtext\n│ • buttonyt\n│ • 2ninja\n│ • drop\n│ •1917\n│ • boxed\n│ • battle\n│ • blood\n│ • pubg\n│ • phub\n│ • break\n│ • 2glitch\n│ • barlog\n│ • writingchalk\n│ • 2galaxy\n│ • paulscholes\n│ • multicolor3d\n│ • juventus\n│ • brokenglass\n│ • graffiti3\n│ • hotmetalic\n│ • lightgalaxy\n│ • nneon\n│ • cloud\n│ • zombie3d\n│ • bearlogo\n│ • birthdaycake\n│ • cake\n│ • artpapercut\n│ • 3dwood\n│ • realisticvintage\n│ • neondevil\n│ • neon2\n│ • thunder\n│ • graffiti5\n│ • snake\n│ • graffiticolor\n│ • metal\n│ •wordgreen\n│\n╰────「 ©️AMAZONE 」.\n\n");
 
-}));
 
 Neotro.addCommand({pattern: 'listp', fromMe: fs, desc: Lang.BLIST}, (async (message, match) => {
     await message.sendMessage("*👩‍🦰Amazone Alexa TTP list*\n\n╔══════════▷\n*╠📑: .tblue < your Text>*\n*╠📑: .tyellow < your Text>*\n*╠📑: .tgreen< your Text>*\n*╠📑: .tpink < your Text>*\n*╠📑: .tpurple < your Text>*\n*╠📑: .tred < your Text>*\n*╠📑: .tblack < your Text>*\n*╠📑: .tbrown < your Text>*\n╠📑: .tpurple < your text>\n╚══════════▷");
@@ -45,10 +42,7 @@ Neotro.addCommand({pattern: 'stlist', fromMe: fs, desc: TT}, (async (message, ma
 
 //=============PRIVATE START
 
-Neotro.addCommand({pattern: 'textimg', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-    await message.sendMessage("╭─「 👩‍🦰LOGO PACK 」\n│ \n*│💰How To Create Logo*\n│🔅Example : .holo hi\n│🔅Example : .glitch Amazone/Alexa\n│🔅Example : Command <your text>\n│\n│ • holo\n│ • glitch\n│ • s3d\n│ • nlogo\n│ • blackpink\n│ • neonlight\n│ • ninjalogo\n│ • 3dtext\n│ • buttonyt\n│ • 2ninja\n│ • drop\n│ •1917\n│ • boxed\n│ • battle\n│ • blood\n│ • pubg\n│ • phub\n│ • break\n│ • 2glitch\n│ • barlog\n│ • writingchalk\n│ • 2galaxy\n│ • paulscholes\n│ • multicolor3d\n│ • juventus\n│ • brokenglass\n│ • graffiti3\n│ • hotmetalic\n│ • lightgalaxy\n│ • nneon\n│ • cloud\n│ • zombie3d\n│ • bearlogo\n│ • birthdaycake\n│ • cake\n│ • artpapercut\n│ • 3dwood\n│ • realisticvintage\n│ • neondevil\n│ • neon2\n│ • thunder\n│ • graffiti5\n│ • snake\n│ • graffiticolor\n│ • metal\n│ •wordgreen\n│\n╰────「 ©️AMAZONE 」.\n\n");
 
-}));
 
 Neotro.addCommand({pattern: 'listp', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     await message.sendMessage("*👩‍🦰Amazone Alexa TTP list*\n\n╔══════════▷\n*╠📑: .tblue < your Text>*\n*╠📑: .tyellow < your Text>*\n*╠📑: .tgreen< your Text>*\n*╠📑: .tpink < your Text>*\n*╠📑: .tpurple < your Text>*\n*╠📑: .tred < your Text>*\n*╠📑: .tblack < your Text>*\n*╠📑: .tbrown < your Text>*\n╠📑: .tpurple < your text>\n╚══════════▷");
