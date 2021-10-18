@@ -17,7 +17,7 @@ const NO_RESULT = "*🌀can't Find Anything...*"
         if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://bx-${tenu.ON}.herokuapp.com/api/download/tiktok?url=&apikey=${tenu.CCN}`)
+          .get(`https://bx-${tenu.ON}.herokuapp.com/api/download/tiktok?url=${link}&apikey=${tenu.CCN}`)
           .then(async (response) => {
             const {
               vid_wm,
