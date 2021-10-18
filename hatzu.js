@@ -67,7 +67,7 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    ON: "hunter",
+    ONE: "hunter",
     CCN: "Ikyy69",
     ON: "hunter",
     HLOCK: "hadi-api",
