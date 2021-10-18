@@ -29,7 +29,7 @@
         "TIME_ZONE": {
             "description": "type your time zone (pass this sri lankan users) ",
             "required": false,
-            "value": "Asia/colombo"
+            "value": "Asia/Colombo"
         },
         "EMOJI_COMMAND": {
             "description": "Panel Command emoji",
