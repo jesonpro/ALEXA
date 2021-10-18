@@ -11,17 +11,17 @@ const DWLOAD_VID = "*🎭Downloading Your Video...*"
 const YTV_UP = "*🚀Uploading Your Video...*"
 const NO_RESULT = "*🌀can't Find Anything...*"
 
-    amazone.addCommand({ pattern: 'mp3 ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.MP4,  deleteCommand: false}, async (message, match) => {
+    amazone.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.MP4,  deleteCommand: false}, async (message, match) => {
         const link = match[1]
         if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
+          .get(`https://bx-${tenu.ON}.herokuapp.com/api/download/tiktok?url=&apikey=${tenu.CCN}`)
           .then(async (response) => {
             const {
-              link,
-            } = response.data.result
-            const videoBuffer = await axios.get(link, {responseType: 'arraybuffer'})
+              vid_wm,
+            } = response.data.video_URL
+            const videoBuffer = await axios.get(vid_wm, {responseType: 'arraybuffer'})
             await message.client.sendMessage(message.jid,YTV_UP,MessageType.text);
             await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.document, {mimetype: Mimetype.mp4, ptt: false})
         })
