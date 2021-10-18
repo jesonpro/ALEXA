@@ -624,11 +624,11 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         } else {
                             whats = new Message(conn, msg);
                         }
-//=
+/*
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-//=
+*/
 
 
 //=====================================================================================
