@@ -608,7 +608,9 @@
             "APK_N": "🛡️ APK Name : ",
             "APK_DEV": "\n👨🏻‍💻 Developer : ",
             "APK_V": "\n📟 Version : ",
-            "APK_SUM": "\n🔎info : ",      
+            "APK_SUM": "\n🔎info : ", 
+            "TIKTOK": "Download Tik tok video.",
+	    "FBDOWN": "Download Facebook Video.",    
             "NOT_AVAILABLE": "👩‍🦰Amazone chat bot Disabled."
         },
         "covid": {
