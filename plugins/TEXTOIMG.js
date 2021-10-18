@@ -6,8 +6,8 @@ const hrs = new Date().getHours({ timeZone: Config.TIME_ZONE })
 const Language = require('../language');
 const Lang = Language.getString('amazone');
 const tk = Config.WORKTYPE == 'public' ? false : true
-
-Amazon.addCommand({pattern: 'menu', fromMe: tk, desc: Lang.MENU}, (async (message, match) => {
+const TT = 'Text To Lmage List'
+Amazon.addCommand({pattern: 'textimg', fromMe: tk, desc: TT}, (async (message, match) => {
     var time = new Date().toLocaleString('SI', { timeZone: Config.TIME_ZONE }).split(' ')[1]
 
     var wish = ''
@@ -26,10 +26,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     var respoimage = await axios.get(`${Config.MENU_LOGO}`, { responseType: 'arraybuffer' })
     await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `        
 
- *╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」*
- │
- *│ᴛʏᴘᴇ: `+Config.PANEL_COMMAND+` get full Command list
- ├─────────●●►
+ *╭─「 LOGO PACK」*
+ *├─────────●●►*
  *│🌼HEY,*  `+wish+`
  *│👤Name:* `+Config.BOT_NAME+`
  *│💎Role:* Developer
@@ -38,8 +36,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  *│📦Frameworks:* Nodejs
  *│☬Working As*
  *│🛡️ `+Config.WORKTYPE+`*
- │ _©️ᴀᴍᴀᴢᴏɴᴇ-ᴛᴇᴇɴᴜ_
- ╰──────────●●►
+ *│©️ᴀᴍᴀᴢᴏɴᴇ-ᴛᴇᴇɴᴜ*
+ *╰──────────●●►*
 
 
  
