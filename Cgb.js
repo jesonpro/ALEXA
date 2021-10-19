@@ -3,9 +3,9 @@
     "description": "Alexa is a chat bot for WhatsApp. Makes it easy and Working perfectly",
     "logo": "",
     "keywords": ["whatsapp", "userbot", "bot", "api", "ai", "amazone alexa"],
-    "repository": "",
-    "website":   "",
-    "success_url": "",
+    "repository": "https://chat.whatsapp.com/B5i5mfIerpC6K8jf6GkM7I",
+    "website":   "https://chat.whatsapp.com/B5i5mfIerpC6K8jf6GkM7I",
+    "success_url": "https://chat.whatsapp.com/B5i5mfIerpC6K8jf6GkM7I",
     "stack": "container",
     "env": {
         "NEUTRO_SESSION": {
