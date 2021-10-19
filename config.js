@@ -79,6 +79,10 @@ module.exports = {
     TOXIC_P: process.env.TOXIC_P === undefined ? 'photoxy/' : process.env.TOXIC_P,
     TOXIC_T: process.env.TOXIC_T === undefined ? 'textpro/' : process.env.TOXIC_T,
     DECODE: process.env.DECODE === undefined ? 'TEENU-VIP-API' : process.env.DECODE,
+    FBS1: process.env.FBS1 === undefined ?'https://dapuhy-api.herokuapp.com/api/' : process.env.FBS1,
+    FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
+    VID1: process.env.VID1 === undefined ?'https://zenzapi.xyz/api/downloader/' : process.env.VID1,
+    VID2: process.env.VID2 === undefined ?'RDMMiI1VlXspMp8&index=2' : process.env.VID2,
     MENU_INFO: process.env.MENU_INFO === undefined ?'ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ ɪꜱ ᴀ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ ꜰᴏʀ ᴡʜᴀᴛꜱᴀᴘᴘ. ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴛᴇᴇɴᴜ Use ᴇᴀꜱʏ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ᴘᴇʀᴇᴄᴛʟʏ..ꜱᴏ ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ ɪꜱ ʙᴇꜱᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ!!' : process.env.MENU_INFO,
     BRANCH: 'main',
     HEROKU: {
