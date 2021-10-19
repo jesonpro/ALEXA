@@ -91,5 +91,10 @@ Neotro.addCommand({ pattern: 'galaxyangel ?(.*)', fromMe: tn,dontAddCommandList:
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
 
+Neotro.addCommand({ pattern: 'prologo ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
+        if (match[1] === '') return await message.sendMessage(NEED);
+        var ttinullimage = await axios.get(`${config.HTTPS}${config.SCRAPE}${config.SUP_HEROKU}${config.QR}name=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
+    }));
 //=====================================================================================
 //=====================================================================================
