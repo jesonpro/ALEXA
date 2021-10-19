@@ -228,6 +228,11 @@
             "required": false,
             "value": "Asia/Colombo"
         },
+        "INBOX_BLOCK": {
+            "description": "Activate Inbox Block System true or false",
+            "required": false,
+            "value": "false"
+        },
         "MENU_INFO": {
             "description": "ADD Information to menu body)",
             "required": true,
