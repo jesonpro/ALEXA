@@ -42,6 +42,10 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
    🛸TEXT TO IMAGE💌
 ◄◉◉◉◉◉◉◄◯►◉◉◉◉◉◉◉►
 
+*🎨Command* : .prologi
+*🧜‍♀Description* : unlimited logo creater.
+*Example:* .prologo your text
+
 *🎨Command* : .blogo
 *🧜‍♀Description* : Text To Black & white bear Logo.
 
