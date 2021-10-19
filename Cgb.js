@@ -54,20 +54,10 @@
             "description": "Use the same App name as first.",
             "required": true
         },
-        "SONG_TYPE": {
-            "description": "Choose your .song file type.(document or audio)",
-            "required": true,
-            "value": "document"
-        },
         "CAPTIONS": {
             "description": "Set your caption under medias.",
             "required": true,
             "value": "Made By 👩‍🦰Amazone Alexa"
-        },
-        "IMGBB": {
-            "description": "Paste your imgbb API to change ALIVE,Welcome,Bye pictures by a command. (Visit https://imgbb.com/ and signup there. And get an API key from https://api.imgbb.com/)",
-            "required": false,
-            "value": ""
         },
         "MUTE_MESSAGE": {
             "description": "Message received when mute a group. If you do not want to change this message, type default.",
@@ -84,7 +74,7 @@
             "required": true,
             "value": "false"
         },
-        "ANTIBUG": {
+        "WHATS_LINK_BLOCK": {
             "description": "Activate Anti-Bug sheild for your groups. And protect your groups by bug bots.(Use true or false)",
             "required": true,
             "value": "false"
@@ -97,12 +87,12 @@
         "WELCOME_LOGO": {
             "description": "Welcome message logo. Enter your image link below to change the image. (Upload the image you want to https://imgbb.com and put that link here.)",
             "required": true,
-            "value": ""
+            "value": "https://telegra.ph/file/d969f3365028c88c7719f.mp4"
         },
         "BYE_LOGO": {
             "description": "Good Bye message logo. Enter your image link below to change the image. (Upload the image you want to https://imgbb.com and put that link here.)",
             "required": true,
-            "value": ""
+            "value": "https://telegra.ph/file/d969f3365028c88c7719f.mp4"
         },
         "UNMUTE_MESSAGE": {
             "description": "Message received when unmuteing a group.",
@@ -123,11 +113,6 @@
             "description": "The way the bot works. If you use public, everyone can use the bot. If you use private, only you can use your bot.",
             "required": true,
             "value": "private"
-        },       
-        "RULES": {
-            "description": "You can set rules display to your groups.",
-            "required": true,
-            "value": "default"
         },
         "EMOJI_COMMAND": {
             "description": "You can change Command list emojis.)",
@@ -203,10 +188,10 @@
             "required": false,
             "value": "true"
         },
-        "YT_INFO": {
-            "description": "Do you want details of YouTube songs and video? Type 'true' or 'false' (YT Info may be cause song download speed slow)",
+        "MENU_INFO": {
+            "description": "ADD Information to menu body)",
             "required": true,
-            "value": "true"
+            "value": "HEY THIS IS MY CommandS"
         }
     },
     "addons": [{
