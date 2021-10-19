@@ -16,6 +16,31 @@
             "description": "If you do not know how to use it, leave it blank! SUDO mode; Your number must be an international number. So you have to have your number after the country code. Example: 947xxxxxxxx (Sri lanka No. 94)",
             "required": false
         },
+        "BIO": {
+            "description": "Change Your live Bio | ඔබේ About එකට අවශ්‍ය දෙයක් මෙහි ලියන්න",
+            "required": false,
+            "value": "ɪ ᴀᵐ ⁿᵒᵗ ᵖᵉʳᶠᵉᶜᵗ ʙᵘᵗ ɪ  ᴀᵐ ʟⁱᵐⁱᵗᵉᵈ ᴇᵈⁱᵗⁱᵒⁿ👀🔥"
+        },
+        "AUTO_STICKER": {
+            "description": "If you likes Auto Sticker you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "false"
+         },
+        "FULL_ALEXA": {
+            "description": "Activate alexa chat bot",
+            "required": false,
+            "value": "false"
+        },
+        "SONGD": {
+            "description": "Customizable Song Download message",
+            "required": false,
+            "value": "*◦•●◉Downloading Your Song◉●•◦*"
+        },
+        "SONGU": {
+            "description": "Customizable Song upload message",
+            "required": false,
+            "value": "*◦•●◉✿Uploading Your Song✿◉●•◦*"
+        },
         "LANGUAGE": {
             "description": "Enter your language. SI - Sinhala | EN - English | ES - Spanish(ag)",
             "required": true,
