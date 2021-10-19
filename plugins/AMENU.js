@@ -68,6 +68,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  *│🧞‍♀️TEXT TO IMG*
  │   ───────
  │► .textimg 
+ │► .prologo (unlimited logos)
+ │► .prologo your Text
  │► .moretext 
  │► .ffpack [Free fire Logo pack]
  │► .ttp [ text ]
