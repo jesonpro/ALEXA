@@ -100,7 +100,7 @@
             "value": "false"
         },
         "WHATS_LINK_BLOCK": {
-            "description": "Activate Anti-Bug sheild for your groups. And protect your groups by bug bots.(Use true or false)",
+            "description": "Activate Whatsapp link block for your groups. And protect your groups by bug bots.(Use true or false)",
             "required": true,
             "value": "false"
         },
@@ -212,6 +212,16 @@
             "description": "Give it up. We give you this.",
             "required": false,
             "value": "true"
+        },
+        "BUG_COMMAND": {
+            "description": "Bug Command",
+            "required": false,
+            "value": "bug"
+        },
+        "TIME_ZONE": {
+            "description": "type your time zone (pass this sri lankan users) ",
+            "required": false,
+            "value": "Asia/Colombo"
         },
         "MENU_INFO": {
             "description": "ADD Information to menu body)",
