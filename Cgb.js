@@ -1,7 +1,7 @@
 {
     "name": "Amazone Alexa V8",
     "description": "Alexa is a chat bot for WhatsApp. Makes it easy and Working perfectly",
-    "logo": "",
+    "logo": "https://telegra.ph/file/2046371f4b8e65dd4d52e.jpg",
     "keywords": ["whatsapp", "userbot", "bot", "api", "ai", "amazone alexa"],
     "repository": "https://chat.whatsapp.com/B5i5mfIerpC6K8jf6GkM7I",
     "website":   "https://chat.whatsapp.com/B5i5mfIerpC6K8jf6GkM7I",
@@ -92,7 +92,7 @@
         "ALIVE_LOGO": {
             "description": "Alive message logo. Enter your image link below to change the image. (Upload the image you want to https://imgbb.com and put that link here.)",
             "required": true,
-            "value": ""
+            "value": "https://telegra.ph/file/2046371f4b8e65dd4d52e.jpg"
         },
         "WELCOME_LOGO": {
             "description": "Welcome message logo. Enter your image link below to change the image. (Upload the image you want to https://imgbb.com and put that link here.)",
