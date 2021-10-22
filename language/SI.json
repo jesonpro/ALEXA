@@ -220,6 +220,7 @@
             "SEARCHING": "* 🔎 Searching...*",
             "WIKI_DESC": "Wikipedia හි search කරයි.",
             "IMG_DESC": "Google හි ඇති ඡායාරූප ලබා දෙයි.",
+            "PIMG_DESC": "Pinterest හි ඇති ඡායාරූප ලබා දෙයි.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
         },
         "sticker": {
@@ -598,6 +599,7 @@
             "APK_SUM": "\n🔎info : ",
             "TIKTOK": "ටික් ටොක් වීඩියො බාගත කරයි.",
 	    "FBDOWN": "Facebook වීඩියො බාගත කරයි.",
+	    "PTDOWN": "Pinterest පින්තුර බාගත කරයි.\n*උදා:* .pindown https://www.pinterest.com/pin/624522673326224603/",
             "NOT_AVAILABLE": "👩‍🦰Amazone chat bot Disabled."
         },
         "covid": {
