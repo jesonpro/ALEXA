@@ -81,6 +81,8 @@ module.exports = {
     DECODE: process.env.DECODE === undefined ? 'TEENU-VIP-API' : process.env.DECODE,
     FBS1: process.env.FBS1 === undefined ?'https://dapuhy-api.herokuapp.com/api/' : process.env.FBS1,
     FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
+    BAPIS: process.env.BAPIS === undefined ?'https://bx-hunter.herokuapp.com/api/' : process.env.BAPIS,
+    JAPIS: process.env.JAPIS === undefined ?'https://docs-jojo.herokuapp.com/api/' : process.env.JAPIS,
     RSITE: process.env.RSITE === undefined ?'https://rei-api.herokuapp.com/api/dl/' : process.env.RSITE,
     VID1: process.env.VID1 === undefined ?'https://zenzapi.xyz/api/downloader/' : process.env.VID1,
     VID2: process.env.VID2 === undefined ?'RDMMiI1VlXspMp8&index=2' : process.env.VID2,
@@ -102,6 +104,7 @@ module.exports = {
     SUPPORT: "905524317852-1612300121",
     FBAPI : 'OSuDZukzPWE49ro',
     VIDAPI: 'azure1',
+    BAPIKEY: 'Ikyy69',
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
 };
