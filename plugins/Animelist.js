@@ -73,7 +73,7 @@ let tk = Config.WORKTYPE == 'public' ? false : true
 
     }));
 
-    Neotro.addCommand({ pattern: 'neko ?(.*)', fromMe: true, dontaddCommandList: true}, (async (message, match) => {
+    Neotro.addCommand({ pattern: 'neko ?(.*)', fromMe: tk, dontaddCommandList: false, desc: Lang.ANIMELIST,}, (async (message, match) => {
 
        var ttinullimage = await axios.get(`https://bx-${Config.HSITE}.herokuapp.com/api/sfw/neko?apikey=${Config.BAPIKEY}`, { responseType: 'arraybuffer' })
 
