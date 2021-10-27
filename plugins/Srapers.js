@@ -124,7 +124,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'antilink ?(.*)', fromMe: tn, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
+    Amazone.addCommand({pattern: 'antilink ?(.*)', fromMe: true , desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
@@ -182,7 +182,7 @@ if (config.LANG == 'SI') {
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 //©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
 
-    Amazone.addCommand({pattern: 'autobio ?(.*)', fromMe: tn, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
+    Amazone.addCommand({pattern: 'autobio ?(.*)', fromMe: true , desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
         const bio_status = `${config.AUTOBİO}`
         if (match[1] == 'on') {
             if (bio_status == 'true') {
