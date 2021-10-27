@@ -97,7 +97,7 @@ Neotro.addCommand({ pattern: 'fb ?(.*)', fromMe: ramiya , desc: ALang.FBDOWN}, a
 
     await message.sendMessage(DOWNMSG)
 	
-	var url = `${Alexa.FBS1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
+	var url = `${Alexa.SITE1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
 				// 
 				await axios 
 					.get(`${url}`)
@@ -126,7 +126,7 @@ Neotro.addCommand({ pattern: 'fb ?(.*)', fromMe: teenuh , desc: ALang.FBDOWN}, a
 
     await message.sendMessage(DOWNMSG)
 	
-	var url = `${Alexa.FBS1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
+	var url = `${Alexa.SITE1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
 				// 
 				await axios 
 					.get(`${url}`)
@@ -160,7 +160,7 @@ Neotro.addCommand({ pattern: 'xxfbsd ?(.*)', fromMe: ramiya , dontAddCommandList
 
     await message.sendMessage('⛔️ _*ERROR 404*_')
 	
-	var url = `${Alexa.FBS1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
+	var url = `${Alexa.SITE1}socialmedia/${Alexa.FBS2}=${link}&apikey=${Alexa.FBAPI}`
 				// 
 				await axios 
 					.get(`${url}`)
