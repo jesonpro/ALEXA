@@ -28,7 +28,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
  *╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」*
  │
- *│ᴛʏᴘᴇ: `+Config.PANEL_COMMAND+` get full Command list
+ *│ᴛʏᴘᴇ: .`+Config.PANEL_COMMAND+` get full Command list*
  ├─────────●●►
  *│🌼HEY,*  `+wish+`
  *│👤Name:* `+Config.BOT_NAME+`
