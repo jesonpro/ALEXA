@@ -24,7 +24,7 @@ module.exports = {
     ZNLOCK: 'zenzapi.xyz',
     ZSITE: process.env.ZSITE === undefined ?'enzapi.xyz' : process.env.ZSITE,
     ZAPI: process.env.ZAPI === undefined ?'AMAZONE' : process.env.ZAPI,
-    BSITE: process.env.BSITE === undefined ?'dapuhy-api.herokuapp.com' : process.env.BSITE,
+    BSITE: process.env.BSITE === undefined ?'api.dapuhy.ga' : process.env.BSITE,
     BAPI: process.env.BAPI === undefined ?'ALEXA-1' : process.env.BAPI,
     NS: process.env.NS === undefined ?'' : process.env.NS,
     NS: process.env.NS === undefined ?'' : process.env.NS,
