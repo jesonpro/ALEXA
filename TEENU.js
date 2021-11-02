@@ -12,7 +12,7 @@ const fs = require('fs');
 async function Amazone () {
     const conn = new WAConnection();
     const Session = new StringSession();  
-    conn.version = [2, 2119, 6]
+    conn.version = [2, 2140, 12]
     conn.logger.level = 'warn';
     conn.regenerateQRIntervalMs = 50000;
     
