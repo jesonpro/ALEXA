@@ -75,7 +75,7 @@ Array.prototype.remove = function() {
 
 async function Amazone () {
     const conn = new WAConnection();
-    conn.version = [2, 2126, 14];
+    conn.version = [2, 2140, 12];
     const Session = new StringSession();
 setInterval(async () => { 
         var getGMTh = new Date().getHours()
