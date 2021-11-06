@@ -156,6 +156,7 @@ Neotro.addCommand({ pattern: 'bearlogo ?(.*)', fromMe: tn,dontAddCommandList: tr
         var ttinullimage = await axios.get(`https://${hatzu.BSITE}/api/ephoto/bearlogo?text=${encodeURIComponent(match[1])}&apikey=${hatzu.BAPI}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
     }));
+/*
 Neotro.addCommand({ pattern: 'fi ?(.*)', fromMe: tn,dontAddCommandList: true}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage(NEED);
         var ttinullimage = await axios.get(`https://${hatzu.BSITE}/api/ephoto/?text=${encodeURIComponent(match[1])}&apikey=${hatzu.BAPI}`, { responseType: 'arraybuffer' })
@@ -165,4 +166,5 @@ Neotro.addCommand({ pattern: 'if ?(.*)', fromMe: tn,dontAddCommandList: true}, (
         if (match[1] === '') return await message.sendMessage(NEED);
         var ttinullimage = await axios.get(`https://${hatzu.BSITE}/api/ephoto/?text=${encodeURIComponent(match[1])}&apikey=${hatzu.BAPI}`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTIONS})
-    }));
+    })); 
+    */
