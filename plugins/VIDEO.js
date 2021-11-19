@@ -1,6 +1,7 @@
 /*
 Api එක උස්සන එකාගෙ මුලු පව්ලම හෙන හතක් වැදිලා 
 //මකබෑවිලාම යන්න ඕනෙ..!!!! eeeew!
+*/
 
 const amazone = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
@@ -38,4 +39,4 @@ const tk = Config.WORKTYPE == 'public' ? false : true
     )
 //=====================================================================================
 //=====================================================================================
-*/
+
