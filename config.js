@@ -80,6 +80,7 @@ module.exports = {
     TOXIC_T: process.env.TOXIC_T === undefined ? 'textpro/' : process.env.TOXIC_T,
     DECODE: process.env.DECODE === undefined ? 'TEENU-VIP-API' : process.env.DECODE,
     SITE1: process.env.SITE1 === undefined ?'https://api.dapuhy.ga/api/' : process.env.SITE1,
+    SITE12: process.env.SITE12 === undefined ?'https://yuzzu-api.herokuapp.com/api/' : process.env.SITE12,
     FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
     BAPIS: process.env.BAPIS === undefined ?'https://bx-hunter.herokuapp.com/api/' : process.env.BAPIS,
     JAPIS: process.env.JAPIS === undefined ?'https://docs-jojo.herokuapp.com/api/' : process.env.JAPIS,
