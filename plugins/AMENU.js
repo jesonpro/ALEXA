@@ -94,8 +94,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │►.img [ name ]
  │►.fb  link ]
  │►.tiktok [ link ]
- │►.vinsta  [ Insta Video ]
- │►.pinsta [ Insta Post ]
+ │►.igv  [ Insta Video ]
+ │►.igp [ Insta Photo ]
  │►.twt [twitter video Link]
  │►.mediafire
  ╰────────────●●►
