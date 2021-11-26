@@ -6,19 +6,19 @@ NEOTROX - TEENUHX
 
 const simpleGit = require('simple-git');
 const git = simpleGit();
-const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const amazone = require('../events');
+const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const exec = require('child_process').exec;
 const Heroku = require('heroku-client');
 const { PassThrough } = require('stream');
 const heroku = new Heroku({ token: Config.HEROKU.API_KEY })
-
+const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+amazone.addCommand({pattern: 'update$', fromMe: true, dontAddCommandList: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -27,21 +27,22 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (a
             Lang.UPDATE, MessageType.text
         );    
     } else {
-        var degisiklikler = Lang.NEW_UPDATE;
+        var newzels = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁◁' + commit.author_name + '▷▷\n';
+                newzels += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
             }
         );
         
-        await message.client.sendMessage(
-            message.jid,
-            degisiklikler + '```', MessageType.text
-        ); 
-    }
-}));
+        var webimage = await axios.get(`${Config.MENU_LOGO}`, { responseType: 'arraybuffer' })
 
-Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg  , caption: newzels + '```' })
+        
+    }
+ }));   
+
+amazone.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
