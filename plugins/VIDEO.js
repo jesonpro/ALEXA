@@ -15,7 +15,7 @@ const YSTV_UP = "*🚀Uploading Your short Video...*"
 const NO_RESULT = "*🌀can't Find Anything...*"
 const fs = require('fs');
 const axios = require('axios');
-
+const config = require('../config');
 let  PUBH = config.WORKTYPE == 'public' ? true : true
 let KSK = config.WORKTYPE == 'public' ? false : true
 
