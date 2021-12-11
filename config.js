@@ -90,6 +90,7 @@ module.exports = {
     VID1: process.env.VID1 === undefined ?'https://zenzapi.xyz/api/downloader/' : process.env.VID1,
     VID2: process.env.VID2 === undefined ?'RDMMiI1VlXspMp8&index=2' : process.env.VID2,
     SITE10: process.env.SITE10 === undefined ?'https://zenzapi.xyz/api/' : process.env.SITE10,
+    LOL_API: process.env.LOL_API === undefined ?'default' : process.env.LOL_API,
     MENU_INFO: process.env.MENU_INFO === undefined ?'ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ ɪꜱ ᴀ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ ꜰᴏʀ ᴡʜᴀᴛꜱᴀᴘᴘ. ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴛᴇᴇɴᴜ Use ᴇᴀꜱʏ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ᴘᴇʀᴇᴄᴛʟʏ..ꜱᴏ ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ ɪꜱ ʙᴇꜱᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ!!' : process.env.MENU_INFO,
     BRANCH: 'main',
     HEROKU: {
@@ -109,10 +110,12 @@ module.exports = {
     FBAPI : 'OSuDZukzPWE49ro',
     YTS1: 'ytmp4v2?url',
     YTS2: 'ytplaymp4v2?query',
-    VIDAPI: 'azure1',
+    VIDAPI: 'default',
     BAPIKEY: 'Ikyy69',
     ZRUN: "zenzapi",
     ZTH: "d537895142",
+    BASE1: 'base32',
+    BASE2: 'base64',
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
 };
