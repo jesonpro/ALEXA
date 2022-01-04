@@ -81,6 +81,7 @@ module.exports = {
     DECODE: process.env.DECODE === undefined ? 'TEENU-VIP-API' : process.env.DECODE,
     SITE1: process.env.SITE1 === undefined ?'https://api.dapuhy.ga/api/' : process.env.SITE1,
     SITE12: process.env.SITE12 === undefined ?'https://yuzzu-api.herokuapp.com/api/' : process.env.SITE12,
+    SITE14: process.env.SITE14 === undefined ?'https://tyz-api.herokuapp.com/randomimg/akaneko?param=' : process.env.SITE14,
     FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
     BAPIS: process.env.BAPIS === undefined ?'https://bx-hunter.herokuapp.com/api/' : process.env.BAPIS,
     JAPIS: process.env.JAPIS === undefined ?'https://docs-jojo.herokuapp.com/api/' : process.env.JAPIS,
