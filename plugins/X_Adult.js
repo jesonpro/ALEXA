@@ -125,7 +125,7 @@ Ramiya.addCommand({ pattern: 'getxnx ?(.*)', fromMe: tp1}, async (message, match
                       for (var x of azure_result) {
                           content += `🪀 *Title* : ${x.title}\n`
                       //  content += `Info : ${x.info}\n`
-                          content += `🔗 *Link* : ${x.link}\n\n`
+                          content += `🔗 *Link* : ${x.url}\n\n`
                       }
 
       await message.client.sendMessage(message.jid,header+'\n\n'+content,MessageType.text, {quoted: message.data});
@@ -149,7 +149,7 @@ Ramiya.addCommand({ pattern: 'getxnx ?(.*)', fromMe: tp2}, async (message, match
                       for (var x of azure_result) {
                           content += `🪀 *Title* : ${x.title}\n`
                       //  content += `Info : ${x.info}\n`
-                          content += `🔗 *Link* : ${x.link}\n\n`
+                          content += `🔗 *Link* : ${x.url}\n\n`
                       }
 
       await message.client.sendMessage(message.jid,header+'\n\n'+content,MessageType.text, {quoted: message.data});
